@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC:100,300,400,500,700,900');
+@color-text-1: #0d1a26;
+@color-text-2: #314649;
+@color-text-3: #697b8c;
+@color-text-4: #999999;
+@color-text-5:#E49111;
+@color-text-lianjie:#5E8CD1;
+@color-brand-1:#ffdd56;
+@color-brand-2:#2196f3;
+@color-brand-3:#F9E89B;
+@color-fill-1:#f6f8fA;
+@color-fill-2:#c0c6cc;
+@color-line-1:#ebedf0;
+@color-line-dark:#dddee1;
+@font-size-title: 20px;
+@font-size-title2: 18px;
+@font-size-body: 14px;
+@font-size-header1:24px;
+@font-size-caption:13px;
+@font-size-exsmall:12px;
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+}
+
+
+body{
+  font-family: 'Noto Sans SC',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  font-size: 20px;
+  /* Safari仅限 */
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+    overflow: hidden;
+    box-sizing: border-box;
+    body{
+        overflow: hidden;
+        .section{
+            width: 100%; 
+            position: fixed; 
+            margin-top: 48px;
+            display:flex; 
+            .bg1{
+                position: absolute;
+                top: -48px;
+                right: 0px;
+                z-index: -10;
+            }
+            .main{
+                display: block;
+                padding: 32px 160px 120px 48px;
+                line-height: 1.5;
+                width: 100%;
+                overflow: scroll;
+                &::-webkit-scrollbar {display: none;}
+                height: 1024px;
+                hr{
+                    clear: both;
+                    height: 1px;
+                    margin: 64px 0 56px;
+                    background: @color-line-1;
+                    border: 0;
+                }
+                .sumaraytitle{
+                    font-size: @font-size-header1;
+                    font-weight: 800;
+                    margin-bottom: 4px;
+                    margin-right: 4px;
+                }
+                }          
+                .header{
+                    position: relative;
+                    .headerfront{
+                        position: absolute; 
+                        top: 32px;
+                        font-size: 36px;
+                        color:@color-text-1;
+                        line-height: 44px;
+                        font-weight: bold;
+                    }
+                    .headerback{
+                        font-size: 48px;
+                        line-height: 44px;
+                        font-weight: 300;
+                        color: fade(@color-text-1,10%);
+                        margin-block-end: 0px;
+                    }
+                    .headerbg{
+                        height: 24px;
+                        background-color: @color-brand-3;
+                        margin-top: -20px;
+                    }   
+                    .headertext{
+                        position: relative;
+                        margin-top:48px;
+                        margin-bottom: 16px;
+                        font-size: @font-size-body;
+                        color: @color-text-2;
+                        white-space:pre-wrap;
+                    }   
+                }
+                p{
+                    position: relative;
+                    margin-bottom: 16px;
+                    font-size: @font-size-body;
+                    color: @color-text-2;     
+                }
+                .quote{
+                    background-color: @color-fill-1;
+                    padding: 16px 20px 12px 20px;
+                    font-size: @font-size-body;
+                    .quotetitle{
+                        font-weight: bold;
+                        margin-bottom: 8px;
+                        display: inline-block;
+                        margin-right: 4px;
+                    }
+                    .quotecontent{
+                        color: @color-text-2;
+                        display: block;
+                        margin-bottom: 8px;
+                    }
+                         
+                }
+            
+                .content{
+                    .wrap{
+                        overflow: hidden;
+                        padding: 16px 0 72px;
+                        // margin-bottom: 32px;
+                        .contentitle{
+                            font-size: @font-size-title;
+                            color: @color-text-1;
+                            font-weight: bold;
+                            margin-bottom: 12px;
+                            margin-right: 4px;
+                            color:@color-text-5;
+                        }
+                        .beizhu{
+                            border-left: 4px solid @color-line-1;
+                            color: @color-text-3;
+                            font-size: @font-size-caption;
+                            padding-left: 12px;
+                            margin-top: 32px;
+                            font-weight: 400;
+                            li{
+                                margin-top: 8px;
+                            }
+                        }
+                        .peitu{
+                            float: right;
+                            width: 440px;
+                            margin-left: 176px;
+                            position: relative;
+                            z-index: 100;
+                            clear: both;
+                            .imgcaption{
+                                font-size: @font-size-caption;
+                                color: @color-text-3;
+                                margin-top: 8px;
+                                font-weight: 400;
+                            }  
+                            .imgbg{               
+                                background: @color-fill-1;
+                                padding: 16px;
+                            }    
+                        }
+                        .peituduo{
+                            float: right;
+                            width: 440px;
+                            margin-left: 176px;
+                            margin-bottom: 48px;
+                            position: relative;
+                            z-index: 100;
+                            clear: both;
+                            .imgcaption{
+                                font-size: @font-size-caption;
+                                color: @color-text-3;
+                                margin-top: 8px;
+                                font-weight: 400;
+                            }  
+                            .imgbg{               
+                                background: @color-fill-1;
+                                padding: 16px;
+                            }    
+                        }  
+                        .quote{
+                            background-color: @color-fill-1;
+                            padding: 8px 16px 4px 16px;
+                            font-size: @font-size-body;
+                            margin-right: 624px;
+                            margin-bottom: 24px;
+                            .quotetitle{
+                                font-weight: bold;
+                                margin-bottom: 8px;
+                                display: inline-block;
+                            }
+                            .quotecontent{
+                                color: @color-text-2;
+                                display: block;
+                                margin-bottom: 8px;
+                            }
+                            }         
+                    }   
+            }
+            
+            .wikipage{
+                width: 1200px;
+                margin:0 auto;
+                .title{
+                    margin: 48px 0 88px;
+                }
+                .container{
+                    display: grid;
+                    grid-template-columns: repeat(3, 384px);
+                    grid-template-rows: repeat(2, 210px);
+                    grid-gap: 24px 24px;
+                    .kapian{
+                        width: 384px;
+                        height: 210px;
+                        border: 1px @color-line-1 solid;
+                        border-radius: 4px;
+                        background: white;
+                        &:hover{
+                            box-shadow: 0 4px 10px rgba(36,83,155, 0.12);
+                        }
+                        .header{
+                            padding: 16px 24px 16px 20px;
+                            background: @color-fill-1;
+                            border-radius: 4px 4px 0 0;
+                            .gengduo{
+                                float:right;
+                                right:24px;
+                                line-height: 24px;
+                                color: @color-text-3;
+                                font-size: @font-size-body;
+                                &:hover{
+                                    color: @color-text-5;
+                                    font-weight: bold;}
+                            }
+                            .icon{
+                                float:left;
+                                width: 20px; height: 20px;
+                                fill: @color-fill-1;
+                                margin: 2px 8px 0 0;
+                            }
+                            .biaoti{
+                                margin: 0px;
+                                font-size: @font-size-title;
+                                line-height: 24px;
+                                font-weight: bold;
+                            }
+                        }
+                        .content{
+                            display: grid;
+                            grid-template-columns: 173px auto;
+                            grid-template-rows: 40px 40px auto;
+                            .text{
+                                color:@color-text-3;
+                                font-size: 16px;
+                                margin: 0;
+                                padding-left: 32px;
+                                padding-top: 20px;
+                                margin: 0px;
+                                &:hover{
+                                    color: @color-text-5;
+                                    font-weight: bold;
+                            }
+                        }  
+                        }
+                    }
+                }  
+                .wenzhang{
+                    width: 895px;
+                    height: 144px;
+                    .tupian{
+                        width: 200px;
+                        height: 144px;
+                        border-radius: 4px;
+                    }
+                    .content{
+                        margin-left: 20px;
+                        .a_block{
+                            margin-bottom: 24px;
+                            .title{
+                                font-size: @font-size-title;
+                                font-weight: bold;
+                                color: @color-text-1;
+                            }
+                        }
+                    }
+                }      
+            }
+        }
+        ol,ul {
+            list-style: none;
+        }
+    }
+}
+
+
+.chouticontent{
+    margin: -8px 0 64px;
+    .peitu{
+        width: 440px;
+        margin-left: 48px;
+        .imgbg{               
+            background: @color-fill-1;
+            padding: 16px;
+        }    
+    }  
+    .choutibiaoti{
+        display: inline-block;
+        vertical-align: top;
+        max-width: 440px;
+        padding: 0 0 12px;
+        margin: 0px;
+        font-size: @font-size-body;
+        color: @color-text-1;
+        font-weight: 400;
+    }
+}
+
+.rightnav{
+    padding: 32px 16px 0 0;
+    width: 128px;
+    position: absolute;
+    right: 0px;
+    font-size: @font-size-exsmall;
+    ol{
+        border-left: 1px solid @color-line-1;
+        padding-left: 16px;
+        li{
+            margin-bottom: 4px;
+        }
+    } 
+    a{
+        color: @color-text-2;
+    }
+}
+.rightnavactive{
+    color:@color-brand-2;
+}
+
+.icon{
+    width: 1em; height: 1em;
+       vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    display: inline-block;
+ }
+
+ .wenzhangkapian{
+     padding: 20px 16px 20px 16px;
+     box-shadow: 0 3px 8px rgba(36,83,155, 0.08);
+     margin-right: 616px;
+     margin-left: 8px;
+     overflow: hidden;
+     &:hover{
+        box-shadow: 0 4px 14px rgba(36,83,155, 0.16);
+    .tiaozhuan{
+        color: @color-brand-3;
+        }
+    .title{
+        color: @color-text-5;
+        }
+    }
+     .tupian{
+         width: 128px;
+         height: 80px;
+         border-radius: 4px;
+         background-size: 100% auto;
+         background-repeat: no-repeat;
+         background-position: center;
+         float: left;
+         margin-right: 20px;
+     }
+     .title{
+         font-size: @font-size-title2;
+         font-weight: bold;
+         color: @color-text-2;
+     }
+     .yinyong{
+         font-size: @font-size-caption;
+         color:@color-text-3;
+         margin-bottom: 0;
+         margin-top: 8px;
+     }
+     .tiaozhuan{
+         height: 80px;
+         float:right;
+         margin-left: 20px;
+         font-size: 28px;
+         color: @color-line-dark;
+         line-height: 80px;
+     }
+ }
+
+//   临时新增的待解决问题
+ .daijiejue{
+     color: red !important;
+ }
+
+ .sider{
+    overflow: scroll;
+    max-height: 100vh;
+    width: 256px;
+ }

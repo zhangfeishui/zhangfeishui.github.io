@@ -1,0 +1,38 @@
+.leftnav {
+  width: 192px;
+  flex-shrink: 0;
+  padding: 16px 0 96px 0;
+  font-size: 14px;
+  overflow: scroll;
+  max-height: 100vh;
+  border-right: solid 1px #ebedf0;
+  color: #697b8c;
+}
+.leftnav::-webkit-scrollbar {
+  display: none;
+}
+.leftnav ul li a,
+.leftnav ul li span {
+  display: block;
+  padding: 12px 0 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #314649;
+}
+.leftnav ul li a:hover {
+  background: #f2f4f6;
+  color: #0d1a26;
+}
+.leftnav ul li ul li a,
+.leftnav ul li ul li span {
+  padding-left: 48px;
+  color: #314649;
+  font-weight: normal;
+}
+.leftnav ul li ul li .opener {
+  color: #697b8c;
+}
+.leftnav ul li ul li ul li a {
+  padding-left: 72px;
+  font-weight: normal;
+}

@@ -1,0 +1,62 @@
+@color-text-1: #0d1a26;
+@color-text-2: #314649;
+@color-text-3: #697b8c;
+@color-text-4: #999999;
+@color-text-5:#E49111;
+@color-text-lianjie:#5E8CD1;
+@color-brand-1:#ffdd56;
+@color-brand-2:#2196f3;
+@color-fill-1:#f2f4f6;
+@color-fill-2:#c0c6cc;
+@color-line-1:#ebedf0;
+@font-size-title: 18px;
+@font-size-body: 14px;
+@font-size-header1:24px;
+@font-size-caption:13px;
+@font-size-exsmall:12px;
+
+.leftnav {
+    width: 192px;
+    flex-shrink: 0;
+    padding: 16px 0 96px 0;
+    font-size: @font-size-body;
+    overflow: scroll;
+    &::-webkit-scrollbar {display: none;}
+    max-height: 100vh;
+    border-right: solid 1px @color-line-1;
+    color: @color-text-3;
+    ul{
+        li{
+            a,span{
+                display: block;
+                padding: 12px 0 12px 24px;
+                text-decoration: none;
+                font-weight: bold;
+                color: @color-text-2;
+            }
+            a{       
+                &:hover{
+                    background: @color-fill-1;
+                    color: @color-text-1;
+                }
+            }
+            ul{
+                li{
+                    a,span{
+                        padding-left: 48px;
+                        color: @color-text-2;
+                    font-weight: normal;} 
+                    .opener{
+                        color: @color-text-3;
+                    }
+                    ul{
+                        li{
+                            a{padding-left: 72px;
+                            font-weight: normal;}
+                        }
+                    }           
+                }
+            }
+        }
+    }
+}

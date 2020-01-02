@@ -1,0 +1,506 @@
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Noto Sans SC Thin'), local('NotoSansSC-Thin'), url(https://fonts.gstatic.com/s/notosanssc/v9/k3kJo84MPvpLmixcA63oeALZTbKK0Qk.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Noto Sans SC Light'), local('NotoSansSC-Light'), url(https://fonts.gstatic.com/s/notosanssc/v9/k3kIo84MPvpLmixcA63oeALZhaCd9i_4.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans SC Regular'), local('NotoSansSC-Regular'), url(https://fonts.gstatic.com/s/notosanssc/v9/k3kXo84MPvpLmixcA63oeALRLoKL.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Noto Sans SC Medium'), local('NotoSansSC-Medium'), url(https://fonts.gstatic.com/s/notosanssc/v9/k3kIo84MPvpLmixcA63oeALZ3aGd9i_4.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans SC Bold'), local('NotoSansSC-Bold'), url(https://fonts.gstatic.com/s/notosanssc/v9/k3kIo84MPvpLmixcA63oeALZlaed9i_4.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans SC';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Noto Sans SC Black'), local('NotoSansSC-Black'), url(https://fonts.gstatic.com/s/notosanssc/v9/k3kIo84MPvpLmixcA63oeALZraWd9i_4.otf) format('opentype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+body {
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+  font-size: 20px;
+  /* Safari仅限 */
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  line-height: 1.3;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+html body {
+  overflow: hidden;
+}
+html body .section {
+  width: 100%;
+  position: fixed;
+  margin-top: 48px;
+  display: flex;
+}
+html body .section .bg1 {
+  position: absolute;
+  top: -48px;
+  right: 0px;
+  z-index: -10;
+}
+html body .section .main {
+  display: block;
+  padding: 32px 160px 120px 48px;
+  line-height: 1.5;
+  width: 100%;
+  overflow: scroll;
+  height: 1024px;
+}
+html body .section .main::-webkit-scrollbar {
+  display: none;
+}
+html body .section .main hr {
+  clear: both;
+  height: 1px;
+  margin: 64px 0 56px;
+  background: #ebedf0;
+  border: 0;
+}
+html body .section .main .sumaraytitle {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 4px;
+  margin-right: 4px;
+}
+html body .section .header {
+  position: relative;
+}
+html body .section .header .headerfront {
+  position: absolute;
+  top: 32px;
+  font-size: 36px;
+  color: #0d1a26;
+  line-height: 44px;
+  font-weight: bold;
+}
+html body .section .header .headerback {
+  font-size: 48px;
+  line-height: 44px;
+  font-weight: 300;
+  color: rgba(13, 26, 38, 0.1);
+  margin-block-end: 0px;
+}
+html body .section .header .headerbg {
+  height: 24px;
+  background-color: #F9E89B;
+  margin-top: -20px;
+}
+html body .section .header .headertext {
+  position: relative;
+  margin-top: 48px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #314649;
+  white-space: pre-wrap;
+}
+html body .section p {
+  position: relative;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #314649;
+}
+html body .section .quote {
+  background-color: #f6f8fA;
+  padding: 16px 20px 12px 20px;
+  font-size: 14px;
+}
+html body .section .quote .quotetitle {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: inline-block;
+  margin-right: 4px;
+}
+html body .section .quote .quotecontent {
+  color: #314649;
+  display: block;
+  margin-bottom: 8px;
+}
+html body .section .content .wrap {
+  overflow: hidden;
+  padding: 16px 0 72px;
+}
+html body .section .content .wrap .contentitle {
+  font-size: 20px;
+  color: #0d1a26;
+  font-weight: bold;
+  margin-bottom: 12px;
+  margin-right: 4px;
+  color: #E49111;
+}
+html body .section .content .wrap .beizhu {
+  border-left: 4px solid #ebedf0;
+  color: #697b8c;
+  font-size: 13px;
+  padding-left: 12px;
+  margin-top: 32px;
+  font-weight: 400;
+}
+html body .section .content .wrap .beizhu li {
+  margin-top: 8px;
+}
+html body .section .content .wrap .peitu {
+  float: right;
+  width: 440px;
+  margin-left: 176px;
+  position: relative;
+  z-index: 100;
+  clear: both;
+}
+html body .section .content .wrap .peitu .imgcaption {
+  font-size: 13px;
+  color: #697b8c;
+  margin-top: 8px;
+  font-weight: 400;
+}
+html body .section .content .wrap .peitu .imgbg {
+  background: #f6f8fA;
+  padding: 16px;
+}
+html body .section .content .wrap .peituduo {
+  float: right;
+  width: 440px;
+  margin-left: 176px;
+  margin-bottom: 48px;
+  position: relative;
+  z-index: 100;
+  clear: both;
+}
+html body .section .content .wrap .peituduo .imgcaption {
+  font-size: 13px;
+  color: #697b8c;
+  margin-top: 8px;
+  font-weight: 400;
+}
+html body .section .content .wrap .peituduo .imgbg {
+  background: #f6f8fA;
+  padding: 16px;
+}
+html body .section .content .wrap .quote {
+  background-color: #f6f8fA;
+  padding: 8px 16px 4px 16px;
+  font-size: 14px;
+  margin-right: 624px;
+  margin-bottom: 24px;
+}
+html body .section .content .wrap .quote .quotetitle {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+html body .section .content .wrap .quote .quotecontent {
+  color: #314649;
+  display: block;
+  margin-bottom: 8px;
+}
+html body .section .wikipage {
+  width: 1200px;
+  margin: 0 auto;
+}
+html body .section .wikipage .title {
+  margin: 48px 0 88px;
+}
+html body .section .wikipage .container {
+  display: grid;
+  grid-template-columns: repeat(3, 384px);
+  grid-template-rows: repeat(2, 210px);
+  grid-gap: 24px 24px;
+}
+html body .section .wikipage .container .kapian {
+  width: 384px;
+  height: 210px;
+  border: 1px #ebedf0 solid;
+  border-radius: 4px;
+  background: white;
+}
+html body .section .wikipage .container .kapian:hover {
+  box-shadow: 0 4px 10px rgba(36, 83, 155, 0.12);
+}
+html body .section .wikipage .container .kapian .header {
+  padding: 16px 24px 16px 20px;
+  background: #f6f8fA;
+  border-radius: 4px 4px 0 0;
+}
+html body .section .wikipage .container .kapian .header .gengduo {
+  float: right;
+  right: 24px;
+  line-height: 24px;
+  color: #697b8c;
+  font-size: 14px;
+}
+html body .section .wikipage .container .kapian .header .gengduo:hover {
+  color: #E49111;
+  font-weight: bold;
+}
+html body .section .wikipage .container .kapian .header .icon {
+  float: left;
+  width: 20px;
+  height: 20px;
+  fill: #f6f8fA;
+  margin: 2px 8px 0 0;
+}
+html body .section .wikipage .container .kapian .header .biaoti {
+  margin: 0px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+html body .section .wikipage .container .kapian .content {
+  display: grid;
+  grid-template-columns: 173px auto;
+  grid-template-rows: 40px 40px auto;
+}
+html body .section .wikipage .container .kapian .content .text {
+  color: #697b8c;
+  font-size: 16px;
+  margin: 0;
+  padding-left: 32px;
+  padding-top: 20px;
+  margin: 0px;
+}
+html body .section .wikipage .container .kapian .content .text:hover {
+  color: #E49111;
+  font-weight: bold;
+}
+html body .section .wikipage .wenzhang {
+  width: 895px;
+  height: 144px;
+}
+html body .section .wikipage .wenzhang .tupian {
+  width: 200px;
+  height: 144px;
+  border-radius: 4px;
+}
+html body .section .wikipage .wenzhang .content {
+  margin-left: 20px;
+}
+html body .section .wikipage .wenzhang .content .a_block {
+  margin-bottom: 24px;
+}
+html body .section .wikipage .wenzhang .content .a_block .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0d1a26;
+}
+html body ol,
+html body ul {
+  list-style: none;
+}
+.chouticontent {
+  margin: -8px 0 64px;
+}
+.chouticontent .peitu {
+  width: 440px;
+  margin-left: 48px;
+}
+.chouticontent .peitu .imgbg {
+  background: #f6f8fA;
+  padding: 16px;
+}
+.chouticontent .choutibiaoti {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 440px;
+  padding: 0 0 12px;
+  margin: 0px;
+  font-size: 14px;
+  color: #0d1a26;
+  font-weight: 400;
+}
+.rightnav {
+  padding: 32px 16px 0 0;
+  width: 128px;
+  position: absolute;
+  right: 0px;
+  font-size: 12px;
+}
+.rightnav ol {
+  border-left: 1px solid #ebedf0;
+  padding-left: 16px;
+}
+.rightnav ol li {
+  margin-bottom: 4px;
+}
+.rightnav a {
+  color: #314649;
+}
+.rightnavactive {
+  color: #2196f3;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  display: inline-block;
+}
+.wenzhangkapian {
+  padding: 20px 16px 20px 16px;
+  box-shadow: 0 3px 8px rgba(36, 83, 155, 0.08);
+  margin-right: 616px;
+  margin-left: 8px;
+  overflow: hidden;
+}
+.wenzhangkapian:hover {
+  box-shadow: 0 4px 14px rgba(36, 83, 155, 0.16);
+}
+.wenzhangkapian:hover .tiaozhuan {
+  color: #F9E89B;
+}
+.wenzhangkapian:hover .title {
+  color: #E49111;
+}
+.wenzhangkapian .tupian {
+  width: 128px;
+  height: 80px;
+  border-radius: 4px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  float: left;
+  margin-right: 20px;
+}
+.wenzhangkapian .title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #314649;
+}
+.wenzhangkapian .yinyong {
+  font-size: 13px;
+  color: #697b8c;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+.wenzhangkapian .tiaozhuan {
+  height: 80px;
+  float: right;
+  margin-left: 20px;
+  font-size: 28px;
+  color: #dddee1;
+  line-height: 80px;
+}
+.daijiejue {
+  color: red !important;
+}
+.sider {
+  overflow: scroll;
+  max-height: 100vh;
+  width: 256px;
+}
