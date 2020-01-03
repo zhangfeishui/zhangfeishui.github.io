@@ -60,7 +60,7 @@ const WebShuRuPage = () => (
                         </div>
                         <h1 class="imgcaption">输入完成的修饰样式实际上较少使用。仅针对非深度用户且表单过长时考虑，用来缓解用户的不耐烦。</h1>
                     </div>
-                    <p>和表单中常见的另一组件”选择“所不同的是，输入会出错，需要预留报错文字的位置。因此备注说明一般不会放在输入框下方，而是靠占位符或收起在icon中。<br></br>还有一种办法是采用<Link to="/pop/">Pop。</Link></p>
+                    <p>和表单中常见的另一组件”选择“所不同的是，输入会出错，需要预留报错文字的位置。因此备注说明一般不会放在输入框下方，而是靠占位符或收起在icon中。<br></br>还有一种办法是采用<Link to="/wiki/webcomponents/pop/">Pop。</Link></p>
                     <div class="quote">
                         <span class="quotecontent">预防和纠正错误——考虑输入形式的报错，包括格式错误，字数限制，未填写等</span>
                     </div>
@@ -68,9 +68,9 @@ const WebShuRuPage = () => (
                         <ol>
                             <li id="lifirst">注：</li>
                             <li>1.在弹窗、表单等大面积页面，不宜将文字输入框拉的太长，会影响阅读效率。</li>
-                            <li>2.输入框一般在鼠标点击其他区域（失去焦点）时自动保存。仅当需要考虑取消输入时（比如删除不方便，或是想避免误操作带来的修改），采用手动保存，具体参见<Link to="/xinzeng">”新增“</Link>。</li>
+                            <li>2.输入框一般在鼠标点击其他区域（失去焦点）时自动保存。仅当需要考虑取消输入时（比如删除不方便，或是想避免误操作带来的修改），采用手动保存，具体参见<Link to="/wiki/webcomponents/xinzeng">”新增“</Link>。</li>
                             <li>3.必填用星号标识。在APP端有种惯例，全是必填时省略星号。但是B端容易出现多个相似的表单，为了保持一致性，全是必填也加上星号。</li>
-                            <li>4.标题标签根据具体情况选择左对齐/右对齐等，具体参见<Link to="/duiqi/">”布局-对齐“</Link>。</li>
+                            <li>4.标题标签根据具体情况选择左对齐/右对齐等，具体参见<Link to="/wiki/webcomponents/duiqi/">”布局-对齐“</Link>。</li>
                             <li>5.对于字数限制，也可以不标红报错，而是自动纠错，类似下面数字输入框的办法。</li>
                         </ol>
                     </div>
@@ -128,7 +128,7 @@ const WebShuRuPage = () => (
                     </div>
                     <div class="beizhu">
                         <ol>
-                            <li id="lifirst">注：关于延时完成类任务的反馈，查看<Link to="/notification/">Notification提示框。</Link></li>
+                            <li id="lifirst">注：关于延时完成类任务的反馈，查看<Link to="/wiki/webcomponents/notification/">Notification提示框。</Link></li>
                         </ol>
                     </div>
                 </div>

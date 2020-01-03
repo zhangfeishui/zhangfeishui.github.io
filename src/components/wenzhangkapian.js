@@ -13,8 +13,8 @@ class WenzhangKapian extends React.Component {
                     < div class="tiaozhuan" >
                         <SuperIcon icon="#icontiaozhuan"></SuperIcon>
                     </div>
-                    <h1 class="title">  导航与布局——从信息架构到页面呈现a  </h1>
-                    <p class="yinyong">如果真的仔细去看英美剧的片头设计，会发现它们真的非常令人着迷。它们在每一集影片的开头，像电影海报一样高度概括地描绘了一部剧集...</p>
+                    <h1 class="title"> {this.props.title} </h1>
+                    <p class="yinyong">{this.props.jianjie}</p>
                 </a>
             </div >
         )

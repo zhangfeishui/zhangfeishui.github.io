@@ -166,7 +166,7 @@ APP端一般一个选项一行，便于手指点击。</h1>
                             <li>3.Select下拉适合默认选项，不意味着一定要设置默认。有时候应保持未填待选状态。</li>
                             <li>4.框架组件比如iview，element支持select清空的话，可以不显示”全部“这一选项</li>
                             <li>5.select样式也可以做多选和级联，详情查看对应部分</li>
-                            <li>6.在select中即时新增选项，看<Link to="/xinzeng">这里</Link></li>
+                            <li>6.在select中即时新增选项，看<Link to="/wiki/webcomponents/xinzeng">这里</Link></li>
 
                         </ol>
                     </div>

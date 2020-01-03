@@ -140,6 +140,10 @@ html {
   overflow: hidden;
   box-sizing: border-box;
 }
+html p {
+  font-size: 14px;
+  color: #314649;
+}
 html body {
   overflow: hidden;
 }
@@ -213,8 +217,6 @@ html body .section .header .headertext {
 html body .section p {
   position: relative;
   margin-bottom: 16px;
-  font-size: 14px;
-  color: #314649;
 }
 html body .section .quote {
   background-color: #f6f8fA;

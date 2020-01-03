@@ -12,9 +12,9 @@ if (typeof document !== `undefined`) {
 class SuperIcon extends React.Component {
     render() {
         return (
-            <svg class="icon" aria-hidden="true">
-                <use xlinkHref={this.props.icon} />
-            </svg>
+            <svg class="icon" aria-hidden="true" style={{ color: "#c0c6cc" }}>
+                < use xlinkHref={this.props.icon} />
+            </svg >
         )
     }
 }
