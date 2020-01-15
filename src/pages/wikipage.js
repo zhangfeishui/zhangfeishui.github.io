@@ -16,11 +16,11 @@ import {
 } from "react-router-dom";
 
 
+// 这里渲染WikiPage首页，各卡片由于是新页面，要去wiki.js里配置路由
+
 
 
 const text1 = [{ title: "需求分析", lianjie: "#" }, { title: "设计流程", lianjie: "#" }, { title: "信息架构", lianjie: "#" }, { title: "产品要素", lianjie: "#" }, { title: "用户画像", lianjie: "#" }];
-const text2 = [{ title: "尼尔森十项可用性…", lianjie: "#" }, { title: "多赫蒂阈值", lianjie: "#" }, { title: "席克定律", lianjie: "#" }, { title: "奥卡姆定律", lianjie: "#" }, { title: "格式塔原理", lianjie: "#" }, { title: "菲茨定律", lianjie: "#" }];
-const text3 = [{ title: "关于web交互", lianjie: "/webcomponent/aboutweb" }, { title: "数据编辑", lianjie: "/webcomponent/shuru" }, { title: "数据展示", lianjie: "#" }, { title: "导航", lianjie: "#" }, { title: "操作反馈", lianjie: "#" }, { title: "用户引导", lianjie: "#" }];
 const text5 = [{ title: "车载", lianjie: "/webcomponent/aboutweb" }, { title: "语音交互", lianjie: "/webcomponent/shuru" }, { title: "手势交互", lianjie: "#" }, { title: "VR", lianjie: "#" }];
 
 function WikiPage() {
@@ -39,15 +39,15 @@ function WikiPage() {
                 </div>
                 <div class="container">
                     <Kapian title="交互设计" icon="#iconjiaohusheji" gengduo={`${url}/aa`} text={text1}></Kapian>
-                    <Kapian title="交互原则" icon="#iconjiaohuyuanze" gengduo="/webcomponent/aboutweb" text={text2}></Kapian>
-                    <Kapian title="Web组件" icon="#iconweb" gengduo={`${url}/webcomponents`} text={text3}></Kapian>
+                    <Kapian title="交互原则" icon="#iconjiaohuyuanze" gengduo={`${url}/jiaohuyuanze/aboutyuanze`} text={[{ title: "尼尔森十项可用…", lianjie: `${url}/jiaohuyuanze/niersen` }, { title: "多赫蒂阈值", lianjie: `${url}/jiaohuyuanze/duohedi` }, { title: "席克定律", lianjie: `${url}/jiaohuyuanze/xike` }, { title: "奥卡姆定律", lianjie: `${url}/jiaohuyuanze/aokamu` }, { title: "格式塔原理", lianjie: `${url}/jiaohuyuanze/geshita` }, { title: "菲茨定律", lianjie: `${url}/jiaohuyuanze/feici` }]}></Kapian>
+                    <Kapian title="Web组件" icon="#iconweb" gengduo={`${url}/webcomponents/aboutweb`} text={[{ title: "关于web交互", lianjie: `${url}/webcomponents/aboutweb` }, { title: "数据编辑", lianjie: `${url}/webcomponents/shuru` }, { title: "数据展示", lianjie: `${url}/webcomponents/qinmi` }, { title: "导航", lianjie: `${url}/webcomponents/menu` }, { title: "操作反馈", lianjie: `${url}/webcomponents/alert` }, { title: "用户引导", lianjie: "#" }]}></Kapian>
                     <Kapian title="App组件" icon="#iconapp"></Kapian>
                     <Kapian title="未来交互" icon="#iconweb" text={text5}></Kapian>
                     <Kapian title="生活点滴" icon="#iconweb" text={text5}></Kapian>
                 </div>
                 <Wenzhang></Wenzhang>
             </div>
-        </div>
+        </div >
     )
 }
 

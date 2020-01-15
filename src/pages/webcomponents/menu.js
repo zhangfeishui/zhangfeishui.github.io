@@ -13,7 +13,7 @@ import WenzhangKapian from "../../components/wenzhangkapian";
 
 
 const { TabPane } = Tabs;
-const list = [{ title: "Menu置顶", maodian: "shang" }, { title: "Menu置左", maodian: "zuo" }];
+const list = [{ title: "Menu置顶", maodian: "shang" }, { title: "Menu置左", maodian: "zuo" }, { title: "复合型导航", maodian: "fuhe" }];
 
 
 function callback(key) {
@@ -72,7 +72,6 @@ const WebMenuPage = () => (
             <hr />
             <div class="content" id="zuo">
                 <h1 class="sumaraytitle">Menu置左</h1>
-
                 <div class="wrap">
                     <div class="peitu">
                         <div class="imgbg">
@@ -82,6 +81,12 @@ const WebMenuPage = () => (
                     </div>
                     <p>垂直导航较横向的导航更灵活，易于向下扩展， 且允许的标签长度较长。类目数量不限，可配合滚动条使用，适合信息层级多、操作切换频率高的管理性质的应用。(摘自Antd）</p>
                 </div>
+            </div>
+
+            {/* 内容3 */}
+            <hr />
+            <div class="content" id="fuhe">
+                <h1 class="sumaraytitle">复合型平台Menu</h1>
                 <div class="wrap">
                     <div class="peitu">
                         <div class="imgbg">
@@ -90,6 +95,22 @@ const WebMenuPage = () => (
                         <h1 class="imgcaption">如图，阿里云可以点击左上方icon展开0级导航。</h1>
                     </div>
                     <p>大型中后台网站相当于多个小中台的合集，因此在小中台界面的层级上还有一层全局导航，可称为0级导航。<br></br>0级导航一般都会收起或干脆隐藏。</p>
+                    <div class="beizhu">
+                        <ol>
+                            <li id="lifirst">注：最近正好做项目整合，实践了一下复合型导航。</li>
+                            <li><WenzhangKapian lianjie="https://www.yuque.com/feishui/att9u2/bxxgp3" url="https://cdn.nlark.com/yuque/0/2020/png/169350/1578971073633-6fda7911-ab82-4934-a24c-d1be50679e16.png?x-oss-process=image%2Fresize%2Cm_fill%2Cw_400%2Ch_250" title="小意系统整合的导航设计" jianjie="参考并尝试了三种导航——隐藏进汉堡菜单、收起到侧边、平铺在顶部。分析各自的特点，最终选择最适合小意系统的样式。"></WenzhangKapian></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="peitu">
+                        <div class="imgbg">
+                            <Chakanyuantu src={require('../../images/webcomponent/daohang/menu5.gif')} beizhu="主菜单5"></Chakanyuantu>
+                        </div>
+                        <h1 class="imgcaption">如图，进入二级导航会有动效，整体可以保持在顶部，可以使内容区最大化展示。</h1>
+                    </div>
+                    <p>还有一种办法是通过动效来进行菜单层级的转化。</p>
+
                 </div>
             </div>
         </div>

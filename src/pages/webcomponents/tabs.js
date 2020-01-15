@@ -13,7 +13,7 @@ import WenzhangKapian from "../../components/wenzhangkapian";
 
 
 const { TabPane } = Tabs;
-const list = [{ title: "线条型", maodian: "xiantiao" }, { title: "卡片型", maodian: "kapian" }, { title: "文字型", maodian: "wenzi" }, { title: "胶囊", maodian: "jiaonang" }, {
+const list = [{ title: "线条型", maodian: "xiantiao" }, { title: "卡片型", maodian: "kapian" }, { title: "文字型", maodian: "wenzi" }, { title: "胶囊型", maodian: "jiaonang" }, {
     title: "多层次组合应用", maodian: "zuhe"
 }];
 
@@ -75,6 +75,17 @@ const WebTabsPage = () => (
                         </div>
                     </div>
                     <p>胶囊型在样式上和单选的配置项相同，一般用于局部模块的次级导航。</p>
+                </div>
+
+                <div class="wrap" id="jiaonang">
+                    <h1 class="contentitle">标签型</h1>
+                    <div class="peitu">
+                        <div class="imgbg">
+                            <Chakanyuantu src={require('../../images/webcomponent/daohang/tab8.png')} beizhu="tab8"></Chakanyuantu>
+                        </div>
+                    </div>
+                    <p>标签的典型应用就是网页的多开标签页。应用在Web端,有以下几个特点:</p>
+                    <p>1.它可以跨页面、跨模块，当用户需要在两个页面来回切换时很好用。<br></br>2.标签随用户需要而增加，刚进入页面显得比较精炼，可以隐藏一些次要功能。</p>
                 </div>
             </div>
 

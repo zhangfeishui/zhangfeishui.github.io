@@ -23,7 +23,7 @@ class Kapian extends React.Component {
                     </div>
                     <div class="content">
                         {numbers.map((numbers) =>
-                            <a class="text" key={numbers.index} href={numbers.lianjie}>{numbers.title}</a>
+                            <Link class="text" key={numbers.index} to={numbers.lianjie}>{numbers.title}</Link>
                         )}
                     </div>
                 </div >

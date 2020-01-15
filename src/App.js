@@ -33,9 +33,9 @@ function App() {
         <div className="Header">
           <Link id="shouye" to="/">首页</Link>
           <div>
+            <Link id="wiki" to="/wiki">IXD-wiki</Link>
             <Link id="workings" to="/workings">workings</Link>
             <Link id="writtings" to="/writings">writtings</Link>
-            <Link id="wiki" to="/wiki">IXD-wiki</Link>
           </div>
 
         </div>

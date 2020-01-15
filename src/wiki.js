@@ -1,10 +1,5 @@
 import React, { useState } from 'react';
 import 'antd/dist/antd.css';
-import { Tabs, Tooltip } from 'antd';
-import Title from "./components/title"
-import Kapian from './components/kapian';
-import Wenzhang from './components/wenzhang';
-import SuperIcon from './components/icon';
 import {
     HashRouter as Router,
     Switch,
@@ -16,6 +11,7 @@ import {
 import "./components/layout.css"
 import WebComponents from "./pages/webcomponents/webcomponents"
 import WikiPage from "./pages/wikipage"
+import JiaohuYuanze from './pages/jiaohuyuanze/jiaohuyuanze';
 
 
 
@@ -26,13 +22,11 @@ import WikiPage from "./pages/wikipage"
 
 
 
+// 这里是wiki的顶层交互
 
 function callback(key) {
     console.log(key);
 }
-
-
-
 
 
 
@@ -45,10 +39,13 @@ function Wiki() {
                     <WikiPage></WikiPage>
                 </Route>
                 <Route path={`${path}/aa`}>
-                    <h3>render.</h3>
+                    <h3>render啊啊啊啊.</h3>
                 </Route>
                 <Route path={`${path}/webcomponents`}>
                     <WebComponents />
+                </Route>
+                <Route path={`${path}/jiaohuyuanze`}>
+                    <JiaohuYuanze />
                 </Route>
             </Switch>
         </Router>

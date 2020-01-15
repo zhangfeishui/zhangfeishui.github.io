@@ -55,7 +55,8 @@ class Chakanyuantu extends React.Component {
                     visible={this.state.visible}
                     onCancel={this.handleCancel}
                     footer={null}
-                    width="960px"
+                    width="976px"
+                    bodyStyle={{ paddingTop: "48px" }}
                 >
                     <img src={this.props.src} width="928px"></img>
                 </Modal>
