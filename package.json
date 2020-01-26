@@ -4,11 +4,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@antv/g2": "^3.5.11",
+    "@antv/l7": "^2.0.9",
+    "@antv/l7-maps": "^2.0.9",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "antd": "^3.26.5",
+    "bizcharts": "^3.5.6",
+    "d3": "^5.15.0",
     "gh-pages": "^2.1.1",
+    "lodash": "^4.17.15",
+    "ramda": "^0.26.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0"

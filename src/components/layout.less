@@ -69,12 +69,6 @@ html {
             position: fixed; 
             margin-top: 48px;
             display:flex; 
-            .bg1{
-                position: absolute;
-                top: -48px;
-                right: 0px;
-                z-index: -10;
-            }
             .main{
                 display: block;
                 padding: 32px 160px 120px 48px;
@@ -232,88 +226,177 @@ html {
             }
             
             .wikipage{
-                width: 1200px;
-                margin:0 auto;
-                .title{
-                    margin: 48px 0 88px;
+                overflow: scroll;
+                &::-webkit-scrollbar {display: none;}
+                height: 100vh;
+                .bg1{
+                    // position: absolute;
+                    float: right;
+                    margin-top: -48px;
+                    z-index: -10;
                 }
-                .container{
-                    display: grid;
-                    grid-template-columns: repeat(3, 384px);
-                    grid-template-rows: repeat(2, 210px);
-                    grid-gap: 24px 24px;
-                    .kapian{
-                        width: 384px;
-                        height: 210px;
-                        border: 1px @color-line-1 solid;
+                .content{
+                    width: 1200px;
+                    margin:0 auto;
+                    .title{
+                        margin: 48px 0 88px;
+                    }
+                    .subtitle{
+                         margin: 48px 0 20px;
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: @color-text-1;
+                        display: inline-block;
+                        .headerbg{
+                            height: 18px;
+                            background-color: @color-brand-3;
+                            margin-top: -14px;}
+                    }
+                    .container{
+                        display: grid;
+                        grid-template-columns: repeat(3, 384px);
+                        grid-template-rows: repeat(2, 210px);
+                        grid-gap: 24px 24px;
+                        .kapian{
+                            width: 384px;
+                            height: 210px;
+                            border: 1px @color-line-1 solid;
+                            border-radius: 4px;
+                            background: white;
+                            &:hover{
+                                box-shadow: 0 2px 10px rgba(36,83,155, 0.12);
+                            }
+                            .header{
+                                padding: 16px 24px 16px 20px;
+                                background: @color-fill-1;
+                                border-radius: 4px 4px 0 0;
+                                .gengduo{
+                                    float:right;
+                                    right:24px;
+                                    line-height: 24px;
+                                    color: @color-text-3;
+                                    font-size: @font-size-body;
+                                    &:hover{
+                                        color: @color-text-5;
+                                        font-weight: bold;}
+                                }
+                                .icon{
+                                    float:left;
+                                    width: 20px; height: 20px;
+                                    fill: @color-fill-1;
+                                    margin: 2px 8px 0 0;
+                                }
+                                .biaoti{
+                                    margin: 0px;
+                                    font-size: @font-size-title;
+                                    line-height: 24px;
+                                    font-weight: bold;
+                                }
+                            }
+                            .content{
+                                display: grid;
+                                grid-template-columns: 173px auto;
+                                grid-template-rows: 40px 40px auto;
+                                .text{
+                                    color:@color-text-3;
+                                    font-size: 16px;
+                                    margin: 0;
+                                    padding-left: 32px;
+                                    padding-top: 20px;
+                                    margin: 0px;
+                                    &:hover{
+                                        color: @color-text-5;
+                                        font-weight: bold;
+                                }
+                            }  
+                            }
+                        }}
+                        .footer{
+                            height: 120px;
+                        }
+                
+                } 
+                .shouyecontent{
+                    display: flex;
+                    justify-content: space-between;
+                    .tuijian{
+                        width: 256px;
+                        height: 144px;
+                        margin-bottom: 24px;
                         border-radius: 4px;
-                        background: white;
+                        opacity: 0.9;
                         &:hover{
                             box-shadow: 0 4px 10px rgba(36,83,155, 0.12);
-                        }
-                        .header{
-                            padding: 16px 24px 16px 20px;
-                            background: @color-fill-1;
-                            border-radius: 4px 4px 0 0;
-                            .gengduo{
-                                float:right;
-                                right:24px;
-                                line-height: 24px;
-                                color: @color-text-3;
-                                font-size: @font-size-body;
-                                &:hover{
-                                    color: @color-text-5;
-                                    font-weight: bold;}
-                            }
-                            .icon{
-                                float:left;
-                                width: 20px; height: 20px;
-                                fill: @color-fill-1;
-                                margin: 2px 8px 0 0;
-                            }
-                            .biaoti{
-                                margin: 0px;
-                                font-size: @font-size-title;
-                                line-height: 24px;
-                                font-weight: bold;
-                            }
-                        }
-                        .content{
-                            display: grid;
-                            grid-template-columns: 173px auto;
-                            grid-template-rows: 40px 40px auto;
-                            .text{
-                                color:@color-text-3;
-                                font-size: 16px;
-                                margin: 0;
-                                padding-left: 32px;
-                                padding-top: 20px;
-                                margin: 0px;
-                                &:hover{
-                                    color: @color-text-5;
-                                    font-weight: bold;
-                            }
-                        }  
-                        }
+                            opacity: 1;}
                     }
-                }  
-                .wenzhang{
-                    width: 895px;
-                    height: 144px;
+                    .wenzhang{
+                    width: 924px;
+                    height: 176px;
+                    display: flex;
+                    padding: 16px;
+                    border-radius: 4px;  
+                    margin-left: -16px;
+                    margin-bottom: 16px;
+                    &:hover{
+                        // box-shadow: 0 2px 10px rgba(36,83,155, 0.12);
+                        background-color: #Fafafa;
+                    .content .title{
+                        color: @color-text-5;
+                    }
                     .tupian{
-                        width: 200px;
+                        background-size: 110% 110%;
+                    }
+                }} 
+                
+                    .tupian{
+                        width: 224px;
                         height: 144px;
-                        border-radius: 4px;
+                        border-radius: 4px;  
+                        background-size: 100% 100%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        transition: 0.2s ;                        // float: left;
+                        // margin-right: 20px;                     
                     }
                     .content{
-                        margin-left: 20px;
-                        .a_block{
-                            margin-bottom: 24px;
+                        width: 620px;
+                        margin-left: 24px;
                             .title{
-                                font-size: @font-size-title;
-                                font-weight: bold;
-                                color: @color-text-1;
+                            font-size: @font-size-title;
+                            font-weight: bold;
+                            color: @color-text-1;
+                            display: inline;
+                            vertical-align: middle;
                             }
+                        .beizhu{
+                            font-size: @font-size-exsmall;
+                            color: @color-text-5;
+                            border: 1px solid @color-text-5 ;
+                            border-radius: 2px;
+                            padding: 4px 8px;
+                            display: inline;
+                            margin-right: 8px;
+                            vertical-align: middle;
+                        }
+                            p{
+                                color: @color-text-4;
+                                margin-bottom: 32px;
+                                margin-top: 12px;
+                            }
+                        }
+                        .time{
+                            color:@color-text-4;
+                            font-size: @font-size-exsmall;
+                            margin-right: 20px;
+                    }
+                    .tags{
+                        color:@color-text-4;
+                        font-size: @font-size-exsmall;
+                        background-color: @color-fill-1;
+                        padding: 4px;
+                        &:hover{
+                            background-color: fade(@color-brand-1,10%);;
+                            color: @color-text-5;
                         }
                     }
                 }      
@@ -432,4 +515,19 @@ html {
     overflow: scroll;
     max-height: 100vh;
     width: 256px;
+ }
+
+ //图表内容
+ .tubiaoquyu{
+     margin-top:48px;
+     height: 1024px;
+     width: 100%;
+     .kongjian{
+         float: right;
+         padding-left: 32px;
+         width: 200px;
+         height:200px;
+         clear: both;
+         z-index: 10;
+     }
  }

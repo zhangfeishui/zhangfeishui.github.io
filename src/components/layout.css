@@ -153,12 +153,6 @@ html body .section {
   margin-top: 48px;
   display: flex;
 }
-html body .section .bg1 {
-  position: absolute;
-  top: -48px;
-  right: 0px;
-  z-index: -10;
-}
 html body .section .main {
   display: block;
   padding: 32px 160px 120px 48px;
@@ -312,63 +306,87 @@ html body .section .content .wrap .quote .quotecontent {
   margin-bottom: 8px;
 }
 html body .section .wikipage {
+  overflow: scroll;
+  height: 100vh;
+}
+html body .section .wikipage::-webkit-scrollbar {
+  display: none;
+}
+html body .section .wikipage .bg1 {
+  float: right;
+  margin-top: -48px;
+  z-index: -10;
+}
+html body .section .wikipage .content {
   width: 1200px;
   margin: 0 auto;
 }
-html body .section .wikipage .title {
+html body .section .wikipage .content .title {
   margin: 48px 0 88px;
 }
-html body .section .wikipage .container {
+html body .section .wikipage .content .subtitle {
+  margin: 48px 0 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0d1a26;
+  display: inline-block;
+}
+html body .section .wikipage .content .subtitle .headerbg {
+  height: 18px;
+  background-color: #F9E89B;
+  margin-top: -14px;
+}
+html body .section .wikipage .content .container {
   display: grid;
   grid-template-columns: repeat(3, 384px);
   grid-template-rows: repeat(2, 210px);
   grid-gap: 24px 24px;
 }
-html body .section .wikipage .container .kapian {
+html body .section .wikipage .content .container .kapian {
   width: 384px;
   height: 210px;
   border: 1px #ebedf0 solid;
   border-radius: 4px;
   background: white;
 }
-html body .section .wikipage .container .kapian:hover {
-  box-shadow: 0 4px 10px rgba(36, 83, 155, 0.12);
+html body .section .wikipage .content .container .kapian:hover {
+  box-shadow: 0 2px 10px rgba(36, 83, 155, 0.12);
 }
-html body .section .wikipage .container .kapian .header {
+html body .section .wikipage .content .container .kapian .header {
   padding: 16px 24px 16px 20px;
   background: #f6f8fA;
   border-radius: 4px 4px 0 0;
 }
-html body .section .wikipage .container .kapian .header .gengduo {
+html body .section .wikipage .content .container .kapian .header .gengduo {
   float: right;
   right: 24px;
   line-height: 24px;
   color: #697b8c;
   font-size: 14px;
 }
-html body .section .wikipage .container .kapian .header .gengduo:hover {
+html body .section .wikipage .content .container .kapian .header .gengduo:hover {
   color: #E49111;
   font-weight: bold;
 }
-html body .section .wikipage .container .kapian .header .icon {
+html body .section .wikipage .content .container .kapian .header .icon {
   float: left;
   width: 20px;
   height: 20px;
   fill: #f6f8fA;
   margin: 2px 8px 0 0;
 }
-html body .section .wikipage .container .kapian .header .biaoti {
+html body .section .wikipage .content .container .kapian .header .biaoti {
   margin: 0px;
   font-size: 20px;
   line-height: 24px;
   font-weight: bold;
 }
-html body .section .wikipage .container .kapian .content {
+html body .section .wikipage .content .container .kapian .content {
   display: grid;
   grid-template-columns: 173px auto;
   grid-template-rows: 40px 40px auto;
 }
-html body .section .wikipage .container .kapian .content .text {
+html body .section .wikipage .content .container .kapian .content .text {
   color: #697b8c;
   font-size: 16px;
   margin: 0;
@@ -376,29 +394,95 @@ html body .section .wikipage .container .kapian .content .text {
   padding-top: 20px;
   margin: 0px;
 }
-html body .section .wikipage .container .kapian .content .text:hover {
+html body .section .wikipage .content .container .kapian .content .text:hover {
   color: #E49111;
   font-weight: bold;
 }
-html body .section .wikipage .wenzhang {
-  width: 895px;
-  height: 144px;
+html body .section .wikipage .content .footer {
+  height: 120px;
 }
-html body .section .wikipage .wenzhang .tupian {
-  width: 200px;
+html body .section .wikipage .shouyecontent {
+  display: flex;
+  justify-content: space-between;
+}
+html body .section .wikipage .shouyecontent .tuijian {
+  width: 256px;
+  height: 144px;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  opacity: 0.9;
+}
+html body .section .wikipage .shouyecontent .tuijian:hover {
+  box-shadow: 0 4px 10px rgba(36, 83, 155, 0.12);
+  opacity: 1;
+}
+html body .section .wikipage .shouyecontent .wenzhang {
+  width: 924px;
+  height: 176px;
+  display: flex;
+  padding: 16px;
+  border-radius: 4px;
+  margin-left: -16px;
+  margin-bottom: 16px;
+}
+html body .section .wikipage .shouyecontent .wenzhang:hover {
+  background-color: #Fafafa;
+}
+html body .section .wikipage .shouyecontent .wenzhang:hover .content .title {
+  color: #E49111;
+}
+html body .section .wikipage .shouyecontent .wenzhang:hover .tupian {
+  background-size: 110% 110%;
+}
+html body .section .wikipage .shouyecontent .tupian {
+  width: 224px;
   height: 144px;
   border-radius: 4px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.2s;
 }
-html body .section .wikipage .wenzhang .content {
-  margin-left: 20px;
+html body .section .wikipage .shouyecontent .content {
+  width: 620px;
+  margin-left: 24px;
 }
-html body .section .wikipage .wenzhang .content .a_block {
-  margin-bottom: 24px;
-}
-html body .section .wikipage .wenzhang .content .a_block .title {
+html body .section .wikipage .shouyecontent .content .title {
   font-size: 20px;
   font-weight: bold;
   color: #0d1a26;
+  display: inline;
+  vertical-align: middle;
+}
+html body .section .wikipage .shouyecontent .content .beizhu {
+  font-size: 12px;
+  color: #E49111;
+  border: 1px solid #E49111;
+  border-radius: 2px;
+  padding: 4px 8px;
+  display: inline;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+html body .section .wikipage .shouyecontent .content p {
+  color: #999999;
+  margin-bottom: 32px;
+  margin-top: 12px;
+}
+html body .section .wikipage .shouyecontent .time {
+  color: #999999;
+  font-size: 12px;
+  margin-right: 20px;
+}
+html body .section .wikipage .shouyecontent .tags {
+  color: #999999;
+  font-size: 12px;
+  background-color: #f6f8fA;
+  padding: 4px;
+}
+html body .section .wikipage .shouyecontent .tags:hover {
+  background-color: rgba(255, 221, 86, 0.1);
+  color: #E49111;
 }
 html body ol,
 html body ul {
@@ -505,4 +589,17 @@ html body ul {
   overflow: scroll;
   max-height: 100vh;
   width: 256px;
+}
+.tubiaoquyu {
+  margin-top: 48px;
+  height: 1024px;
+  width: 100%;
+}
+.tubiaoquyu .kongjian {
+  float: right;
+  padding-left: 32px;
+  width: 200px;
+  height: 200px;
+  clear: both;
+  z-index: 10;
 }

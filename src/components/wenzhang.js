@@ -1,25 +1,35 @@
 import React from "react"
 import './layout.css'
+import {
+    HashRouter as Router,
+    Switch,
+    Route,
+    Link,
+    NavLink
+} from "react-router-dom";
 
 class Wenzhang extends React.Component {
     render() {
+        let imgUrl = this.props.tupian
         return (
             <div class="wenzhang" >
-                <div class="tupian">
+                <div class="tupian" style={{ backgroundImage: 'url(' + imgUrl + ')' }} >
                 </div>
                 <div class="content">
-                    <a href="https://www.uisdc.com/episode-title-sequence-vol2" class="a_block" target="_blank">
-                        <h1 class="title">  那些比剧情还好看的片头设计（英美剧篇） Vol.2  <span class="beizhu">转载</span>  </h1>
-                        <p>如果真的仔细去看英美剧的片头设计，会发现它们真的非常令人着迷。它们在每一集影片的开头，像电影海报一样高度概括地描绘了一部剧集的主要精神气质，以简练快...</p>
+                    <a href={this.props.lianjie} target="_blank">
+                        <div class="biaoti">
+                            <h1 class="beizhu">转载</h1>
+                            <h1 class="title">  {this.props.title}</h1>
+
+                        </div>
+                        <p>{this.props.jianjie}</p>
                     </a>
-                    <h4>
-                        <span class="time">7小时前</span>
-                        <span class="author">
-                            <a href="https://www.uisdc.com/author/soleildu" target="_blank"> 小白 </a>
-                        </span>
-                        <span class="tags"><a href="https://www.uisdc.com/tag/%e7%89%87%e5%a4%b4%e8%ae%be%e8%ae%a1" target="_blank">片头设计</a>
-                        </span>
-                    </h4>
+
+                    <span class="time">{this.props.time}</span>
+                    <span class="time">{this.props.from}</span>
+                    <span><Link class="tags" to={this.props.tiaozhuan} target="_blank">{this.props.guilei}</Link>
+                    </span>
+
                 </div>
 
             </div>

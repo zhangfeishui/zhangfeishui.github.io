@@ -1,0 +1,600 @@
+{
+    "type": "FeatureCollection",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ak16994521",
+                "place": "苏州中心",
+                "mag": "1-22",
+                "time": 1,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.75,
+                    31.26,
+                    200
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ak16994519",
+                "place": "南京中心",
+                "mag": "1-23",
+                "time": 2,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    118.78,
+                    32.07,
+                    105.5
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ak16994517",
+                "place": "南京",
+                "mag": "1-23",
+                "time": 2,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    118.72,
+                    32.00,
+                    0.0
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "南京",
+                "mag": "1-23",
+                "time": 2,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    118.68,
+                    32.12,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "无锡",
+                "mag": "1-23",
+                "time": 2,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.30,
+                    31.568,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "苏州",
+                "mag": "1-23",
+                "time": 2,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.75,
+                    31.00,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "南通",
+                "mag": "1-23",
+                "time": 2,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.90,
+                    31.98,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "连云港",
+                "mag": "1-23",
+                "time": 2,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    119.24,
+                    34.58,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "扬州",
+                "mag": "1-23",
+                "time": 2,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    119.42,
+                    32.39,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "南京",
+                "mag": "1-24",
+                "time": 3,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    118.86,
+                    31.99,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "常州",
+                "mag": "1-24",
+                "time": 3,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    119.98,
+                    31.80,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "常州",
+                "mag": "1-24",
+                "time": 3,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    119.95,
+                    31.71,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "常州",
+                "mag": "1-24",
+                "time": 3,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.04,
+                    31.70,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "常州",
+                "mag": "1-24",
+                "time": 3,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    119.93,
+                    31.89,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "常州",
+                "mag": "1-24",
+                "time": 3,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.05,
+                    31.83,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "苏州",
+                "mag": "1-24",
+                "time": 3,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.62,
+                    31.32,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "盐城",
+                "mag": "1-24",
+                "time": 3,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.18,
+                    33.32,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "宿迁",
+                "mag": "1-24",
+                "time": 3,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    118.28,
+                    33.92,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "南京",
+                "mag": "1-25",
+                "time": 4,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    118.78,
+                    33.08,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "南京",
+                "mag": "1-25",
+                "time": 4,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    118.82,
+                    32.11,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "南京",
+                "mag": "1-25",
+                "time": 4,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    118.88,
+                    32.08,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "无锡",
+                "mag": "1-25",
+                "time": 4,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.41,
+                    31.65,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "苏州",
+                "mag": "1-25",
+                "time": 4,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.48,
+                    31.31,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "苏州",
+                "mag": "1-25",
+                "time": 4,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.47,
+                    31.29,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "苏州",
+                "mag": "1-25",
+                "time": 4,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.58,
+                    31.24,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "苏州",
+                "mag": "1-25",
+                "time": 4,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.67,
+                    31.19,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "南通",
+                "mag": "1-25",
+                "time": 4,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    120.98,
+                    31.91,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "连云港",
+                "mag": "1-25",
+                "time": 4,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    119.42,
+                    34.52,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "连云港",
+                "mag": "1-25",
+                "time": 4,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    119.56,
+                    34.29,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "淮安",
+                "mag": "1-25",
+                "time": 4,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    119.05,
+                    33.57,
+                    7.64
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "ci38021336",
+                "place": "泰州",
+                "mag": "1-25",
+                "time": 4,
+                "felt": null,
+                "tsunami": 0
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    119.93,
+                    33.42,
+                    7.64
+                ]
+            }
+        }
+    ]
+}

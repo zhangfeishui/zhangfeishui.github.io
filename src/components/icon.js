@@ -4,7 +4,7 @@ import "./layout.css"
 
 if (typeof document !== `undefined`) {
     const scriptElem = document.createElement('script');
-    scriptElem.src = '//at.alicdn.com/t/font_1534462_h2gl1lbn6z7.js';
+    scriptElem.src = '//at.alicdn.com/t/font_1534462_r0axejt4h3h.js';
     document.body.appendChild(scriptElem);
 }
 
