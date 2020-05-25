@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.e5576978.chunk.css",
-    "main.js": "/static/js/main.a5f10ddc.chunk.js",
-    "main.js.map": "/static/js/main.a5f10ddc.chunk.js.map",
+    "main.css": "/static/css/main.28b7bf01.chunk.css",
+    "main.js": "/static/js/main.7e6de91d.chunk.js",
+    "main.js.map": "/static/js/main.7e6de91d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.6a2302b0.js",
     "runtime-main.js.map": "/static/js/runtime-main.6a2302b0.js.map",
     "static/css/2.ff8bd605.chunk.css": "/static/css/2.ff8bd605.chunk.css",
-    "static/js/2.23dd26c2.chunk.js": "/static/js/2.23dd26c2.chunk.js",
-    "static/js/2.23dd26c2.chunk.js.map": "/static/js/2.23dd26c2.chunk.js.map",
+    "static/js/2.8c1dc92a.chunk.js": "/static/js/2.8c1dc92a.chunk.js",
+    "static/js/2.8c1dc92a.chunk.js.map": "/static/js/2.8c1dc92a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.0807579201f20c0578b4535b96a7dce3.js": "/precache-manifest.0807579201f20c0578b4535b96a7dce3.js",
+    "precache-manifest.7c4770e9ab6a6eae7a1cf0069a686f50.js": "/precache-manifest.7c4770e9ab6a6eae7a1cf0069a686f50.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.ff8bd605.chunk.css.map": "/static/css/2.ff8bd605.chunk.css.map",
-    "static/css/main.e5576978.chunk.css.map": "/static/css/main.e5576978.chunk.css.map",
-    "static/js/2.23dd26c2.chunk.js.LICENSE.txt": "/static/js/2.23dd26c2.chunk.js.LICENSE.txt",
+    "static/css/main.28b7bf01.chunk.css.map": "/static/css/main.28b7bf01.chunk.css.map",
+    "static/js/2.8c1dc92a.chunk.js.LICENSE.txt": "/static/js/2.8c1dc92a.chunk.js.LICENSE.txt",
     "static/media/about1.png": "/static/media/about1.4f34aa05.png",
     "static/media/about2.png": "/static/media/about2.7b6bf98b.png",
     "static/media/about3.png": "/static/media/about3.663d4f60.png",
@@ -41,6 +41,7 @@
     "static/media/dialog6.png": "/static/media/dialog6.e77ebfb4.png",
     "static/media/dialog7.png": "/static/media/dialog7.1667b600.png",
     "static/media/dialog8.png": "/static/media/dialog8.dbb5868c.png",
+    "static/media/sakura.css": "/static/media/远景.eb14b251.png",
     "static/media/duibi3.png": "/static/media/duibi3.314512da.png",
     "static/media/duiqi1.png": "/static/media/duiqi1.6b4b385a.png",
     "static/media/duiqi5.png": "/static/media/duiqi5.c857c385.png",
@@ -151,8 +152,8 @@
   "entrypoints": [
     "static/js/runtime-main.6a2302b0.js",
     "static/css/2.ff8bd605.chunk.css",
-    "static/js/2.23dd26c2.chunk.js",
-    "static/css/main.e5576978.chunk.css",
-    "static/js/main.a5f10ddc.chunk.js"
+    "static/js/2.8c1dc92a.chunk.js",
+    "static/css/main.28b7bf01.chunk.css",
+    "static/js/main.7e6de91d.chunk.js"
   ]
 }
