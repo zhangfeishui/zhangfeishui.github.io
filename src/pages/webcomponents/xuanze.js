@@ -424,6 +424,19 @@ APP端一般一个选项一行，便于手指点击。</h1>
                         </ol>
                     </div>
                 </div>
+                <div class="wrap" id="jilian">
+                    <div class="peitu">
+                        <div class="imgbg">
+                            <Chakanyuantu src={require('../../images/webcomponent/xuanzeWeb/jilian3.png')} beizhu="标签图3"></Chakanyuantu>
+                        </div>
+                        <h1 class="imgcaption">图中商户为低频筛选，停车场为高频筛选，但商户有近千个，停车场有几十个。采用级联筛选停车场会较慢。</h1>
+                    </div>
+                    <div class="beizhu">
+                        <ol>
+                            <li id="lifirst">注：级联筛选乍一看会比较方便，但实际数据量很大时，需要调取接口导致搜索会比较慢。这种情况就不如拆成两个独立的搜索。</li>
+                        </ol>
+                    </div>
+                </div>
 
                 {/* 穿梭框*/}
                 <div class="wrap" id="chuansuo">
@@ -460,6 +473,7 @@ APP端一般一个选项一行，便于手指点击。</h1>
                     </div>
                     <p>树选择器和级联类似，但由于竖向展开，一般可以承载更复杂的层级，同时也支持增删改操作。</p>
                 </div>
+                <hr />
             </div>
         </div>
     </div>

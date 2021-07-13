@@ -33,8 +33,9 @@ const WebTongjishuzhiPage = () => (
             {/* 内容1 */}
             <hr />
             <div class="content" id="zonglan">
-                <h1 class="sumaraytitle">数据总览</h1>
+                <h1 class="sumaraytitle">文字内容</h1>
                 <div class="wrap">
+                    <h1 class="contentitle">数据总览</h1>
                     <div class="peitu">
                         <div class="imgbg">
                             <Chakanyuantu src={require('../../images/webcomponent/shujuzhanshi/shuzhitongji1.png')} beizhu="数值1"></Chakanyuantu>
@@ -46,6 +47,36 @@ const WebTongjishuzhiPage = () => (
                             <li id="lifirst">注：尽量避免使用品牌色来突出数值，可能会与链接色、警示色等相同而引起用户迷惑。</li>
                         </ol>
                     </div>
+                </div>
+                <div class="wrap">
+                    <h1 class="contentitle">数据详情</h1>
+                    <div class="peituduo">
+                        <div class="imgbg">
+                            <Chakanyuantu src={require('../../images/webcomponent/shujuzhanshi/shuzhitongji6.png')} beizhu="数值1"></Chakanyuantu>
+                        </div>
+                        <h1 class="imgcaption">弹窗和抽屉宽度较小，适合直接排列文字。</h1>
+                    </div>
+                    <div class="peitu">
+                        <div class="imgbg">
+                            <Chakanyuantu src={require('../../images/webcomponent/shujuzhanshi/shuzhitongji8.png')} beizhu="数值1"></Chakanyuantu>
+                        </div>
+                        <h1 class="imgcaption">内容文字紧跟标题即可，也可以调整标题文字的垂直对齐性。</h1>
+                    </div>
+                    <p>数据详情会涉及大量文字信息，需要考虑如何排版。最常用的就是直接排列文字。</p>
+                    <div class="beizhu">
+                        <ol>
+                            <li id="lifirst">注：不需要刻意将冒号后的文字也保持垂直对齐，实测并不会提升可读性。更好的解决办法是让冒号前的文字对齐。</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class="peitu">
+                        <div class="imgbg">
+                            <Chakanyuantu src={require('../../images/webcomponent/shujuzhanshi/shuzhitongji7.png')} beizhu="数值1"></Chakanyuantu>
+                        </div>
+                        <h1 class="imgcaption">表格布局尤其适合名字特别长，直接排列难以对齐的情况。</h1>
+                    </div>
+                    <p>如果是在页面不受宽度限制，也可以考虑把内容布局为表格。</p>
                 </div>
             </div>
 

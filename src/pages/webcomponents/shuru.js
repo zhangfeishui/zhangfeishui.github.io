@@ -133,6 +133,7 @@ const WebShuRuPage = () => (
                     </div>
                 </div>
             </div>
+            <hr />
         </div>
     </div>
 )

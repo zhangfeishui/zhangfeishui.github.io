@@ -194,6 +194,9 @@ const WebXinzengPage = () => (
                             <li>2.如何校验必填项？</li>
                         </ol>
                     </div>
+                    <div class="quote">
+                        <span class="quotecontent">预防和避免错误——若用户未保存就离开当前页面，需要提示用户是否保存。</span>
+                    </div>
                     <p>当抽屉中出现分类时，保存和校验会变得复杂。具体可以看<Link to="/wiki/webcomponents/zhediemianban/">折叠面板。</Link></p>
                 </div>
                 <div class="wrap">
@@ -224,6 +227,7 @@ const WebXinzengPage = () => (
                     </div>
                 </div>
             </div>
+            <hr />
         </div>
     </div>
 )

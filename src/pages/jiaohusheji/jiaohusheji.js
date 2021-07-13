@@ -10,18 +10,13 @@ import {
 import "../../components/layout.css"
 import "../../components/leftnav.css"
 import 'antd/dist/antd.css';
-import AboutYuanze from "./aboutyuanze"
-import Fengzhong from "./fengzhong";
-import KongxianYane from "./kongxianyane";
-import ToumingYunxing from "./toumingyunxing";
-import Mubiaotidu from "./mubiaotidu";
-import Niersen from "./niersen";
-import Duohedi from "./duohedi";
-import Xike from "./xike";
-import Aokamu from "./aokamu";
-import Geshita from "./geshita";
-import Feici from "./feici";
-
+import Kano from "./kano";
+import Diamond from "./diamond"
+import Chaijie from "./chaijie"
+import AboutLiucheng from "./aboutliucheng";
+import SWOTPage from "./swot";
+import DesignSprintPage from "./designsprint";
+import StakeholderMap from "./stakeholder";
 
 
 const activeStyles = {
@@ -37,46 +32,49 @@ function JiaohuSheji() {
         <Router>
             <div className="leftnav">
                 <ul>
-                    <li><NavLink to={`${url}/aboutyuanze`} activeStyle={activeStyles}>关于交互设计</NavLink></li>
+                    <li><NavLink to={`${url}/aboutliucheng`} activeStyle={activeStyles}>关于设计方法</NavLink></li>
                     <li>
-                        <span>交互流程</span>
+                        <span>流程框架</span>
                         <ul class="secondnav">
-                            <li><NavLink to={`${url}/fengzhong`} activeStyle={activeStyles}>峰终定律</NavLink></li>
-                            <li><NavLink to={`${url}/kongxianyane`} activeStyle={activeStyles}>空闲厌恶</NavLink></li>
-                            <li><NavLink to={`${url}/touming`} activeStyle={activeStyles}>透明化运行</NavLink></li>
-                            <li><NavLink to={`${url}/mubiaotidu`} activeStyle={activeStyles}>目标梯度</NavLink></li>
+                            <li><NavLink to={`${url}/diamond`} activeStyle={activeStyles} >双钻模型</NavLink></li>
+                            <li><NavLink to={`${url}/swot`} activeStyle={activeStyles} >SWOT模型</NavLink></li>
+                            <li><NavLink to={`${url}/designsprint`} activeStyle={activeStyles} >设计冲刺</NavLink></li>
+                            <li><NavLink to={`${url}/chaijie`} activeStyle={activeStyles} >拆解重构</NavLink></li>
+                            <li>
+                                <span>需求理解</span>
+                                <ul class="secondnav">
+                                    <li><NavLink to={`${url}/stakeholder`} activeStyle={activeStyles} >利益相关者图</NavLink></li>
+                                    <li><NavLink to={`${url}/kano`} activeStyle={activeStyles} >360度快速访谈</NavLink></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                     <li>
-                        <span>组件化</span>
+                        <span>设计策略</span>
                         <ul class="secondnav">
-                            <li><NavLink to={`${url}/niersen`} activeStyle={activeStyles} >尼尔森十项可用性</NavLink></li>
-                            <li><NavLink to={`${url}/duohedi`} activeStyle={activeStyles} >多赫蒂阈值</NavLink></li>
-                            <li><NavLink to={`${url}/xike`} activeStyle={activeStyles} >席克定律</NavLink></li>
-                            <li><NavLink to={`${url}/aokamu`} activeStyle={activeStyles} >奥卡姆剃刀</NavLink></li>
-                            <li><NavLink to={`${url}/geshita`} activeStyle={activeStyles} >格式塔原理</NavLink></li>
-                            <li><NavLink to={`${url}/feici`} activeStyle={activeStyles} >菲茨定律</NavLink></li>
+                            <li>
+                                <span>需求分级</span>
+                                <ul class="secondnav">
+                                    <li><NavLink to={`${url}/kano`} activeStyle={activeStyles} >Kano模型</NavLink></li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </div>
             <Switch>
                 <Route exact path={path}>
-                    <AboutYuanze />
+                    <AboutLiucheng />
                 </Route>
-                <Route path={`${path}/aboutyuanze`}><AboutYuanze /></Route>
-                <Route path={`${path}/fengzhong`}><Fengzhong /></Route>
-                <Route path={`${path}/kongxianyane`}><KongxianYane /></Route>
-                <Route path={`${path}/touming`}><ToumingYunxing /></Route>
-                <Route path={`${path}/mubiaotidu`}><Mubiaotidu /></Route>
-                <Route path={`${path}/niersen`}><Niersen /></Route>
-                <Route path={`${path}/duohedi`}><Duohedi /></Route>
-                <Route path={`${path}/xike`}><Xike /></Route>
-                <Route path={`${path}/aokamu`}><Aokamu /></Route>
-                <Route path={`${path}/geshita`}><Geshita /></Route>
-                <Route path={`${path}/feici`}><Feici /></Route>
+                <Route path={`${path}/aboutliucheng`}><AboutLiucheng /></Route>
+                <Route path={`${path}/diamond`}><Diamond /></Route>
+                <Route path={`${path}/swot`}><SWOTPage /></Route>
+                <Route path={`${path}/stakeholder`}><StakeholderMap /></Route>
+                <Route path={`${path}/designsprint`}><DesignSprintPage /></Route>
+                <Route path={`${path}/chaijie`}><Chaijie /></Route>
+                <Route path={`${path}/kano`}><Kano /></Route>
             </Switch>
-        </Router>
+        </Router >
     )
 }
 

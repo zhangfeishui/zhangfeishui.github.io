@@ -12,6 +12,9 @@ import "./components/layout.css"
 import WebComponents from "./pages/webcomponents/webcomponents"
 import WikiPage from "./pages/wikipage"
 import JiaohuYuanze from './pages/jiaohuyuanze/jiaohuyuanze';
+import MoreJiaohu from './pages/morejiaohu/morejiaohu';
+import JiaohuSheji from './pages/jiaohusheji/jiaohusheji';
+import DesignThinking from './pages/thinking/thinking';
 
 
 
@@ -44,8 +47,17 @@ function Wiki() {
                 <Route path={`${path}/webcomponents`}>
                     <WebComponents />
                 </Route>
+                <Route path={`${path}/jiaohusheji`}>
+                    <JiaohuSheji />
+                </Route>
                 <Route path={`${path}/jiaohuyuanze`}>
                     <JiaohuYuanze />
+                </Route>
+                <Route path={`${path}/morejiaohu`}>
+                    <MoreJiaohu />
+                </Route>
+                <Route path={`${path}/thinking`}>
+                    <DesignThinking />
                 </Route>
             </Switch>
         </Router>

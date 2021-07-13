@@ -1,4 +1,11 @@
 import React from 'react';
+import {
+    HashRouter as Router,
+    Switch,
+    Route,
+    Link,
+    NavLink
+} from "react-router-dom";
 import 'antd/dist/antd.css';
 import { Tabs, Tooltip } from 'antd';
 
@@ -49,12 +56,21 @@ const WebMessagePage = () => (
                         </ol>
                     </div>
                 </div>
+                <div class="wrap">
+                    <div class="peitu">
+                        <div class="imgbg">
+                            <Chakanyuantu src={require('../../images/webcomponent/fankui/notification6.png')} beizhu="提示框1"></Chakanyuantu>
+                        </div>
+                        <h1 class="imgcaption">层级确定后，即使是先出Notification，再点击按钮，弹窗也会在通知框之下。</h1>
+                    </div>
+                    <p>设计时要注意Notification由于面积较大，容易与其他弹窗相互冲突。一般来说，Notification通知框应位于最顶端。</p>
+                </div>
             </div>
 
             {/* 内容2 */}
             <hr />
             <div class="content" id="shiyong">
-                <h1 class="sumaraytitle">如何使用</h1>
+                <h1 class="sumaraytitle">何时使用</h1>
                 <div class="wrap">
                     <div class="peituduo">
                         <div class="imgbg">
@@ -74,6 +90,18 @@ const WebMessagePage = () => (
                         <span class="quotecontent">及时反馈+提供帮助——对于无法立刻给出反馈的场景，一方面需要告知用户原因，另一方面允许用户随时查看进度（例如任务列表）。</span>
                     </div>
                 </div>
+                <div class="wrap">
+                    <div class="peitu">
+                        <div class="imgbg">
+                            <Chakanyuantu src={require('../../images/webcomponent/fankui/notification5.png')} beizhu="提示框4"></Chakanyuantu>
+                        </div>
+                    </div>
+                    <div class="beizhu">
+                        <ol>
+                            <li >有时会有反馈过于复杂的问题，可以参考类似情况的<Link to="/wiki/webcomponents/dialog">Dialog</Link>。</li>
+                        </ol>
+                    </div>
+                </div>
 
                 <div class="wrap">
                     <div class="peitu">
@@ -83,7 +111,6 @@ const WebMessagePage = () => (
                     </div>
                     <p><b>2.需要主动推送给用户。</b>一般是系统级的问题，比如版本更新等。</p>
                 </div>
-
             </div>
         </div>
     </div>

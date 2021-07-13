@@ -62,7 +62,8 @@ const WebBiaogePage = () => (
                         <ol>
                             <li id="lifirst">注：</li>
                             <li>1.控制在一屏主要是针对Web端表格数据量较大的情况，例如是每页>50条，整体>10页，此时为了快速跳转下一页需要将表格设为固定高度（否则每次要滚动很久才能看到分页）。继而如果整体页面超出一屏而滚动，会出现双滚动条的不佳体验。</li>
-                            <li>2.特殊情况，例如表格在页面中偏下的位置，必须滚动页面才可以看全时，可酌情接受双滚动条带来的负面体验。</li>
+                            <li>2.设计时一般按照1440x900来考虑表格高度，也可以根据需求方电脑尺寸按照1920x960来设计。</li>
+                            <li>3.特殊情况，例如表格在页面中偏下的位置，必须滚动页面才可以看全时，可酌情接受双滚动条带来的负面体验。</li>
                         </ol>
                     </div>
                 </div>
@@ -135,6 +136,19 @@ const WebBiaogePage = () => (
                     </div>
                 </div>
 
+                <div class="wrap" id="yichang">
+                    <h1 class="contentitle">筛选数据</h1>
+                    <div class="peitu">
+                        <div class="imgbg">
+                            <Chakanyuantu src={require('../../images/webcomponent/shujuzhanshi/biaoge1.png')} beizhu="表格"></Chakanyuantu>
+                        </div>
+                    </div>
+                    <p><b>异常状态</b> ——在设计时充分考虑各个字段的异常情况。例如对每列数据考虑最大字数，并在设计稿中呈现。对于可能为空的字段，也在设计稿中表现出来。</p>
+                    <div class="quote">
+                        <span class="quotecontent">简化认知——表示状态的字段应在视觉上凸显，来帮助用户快速判断。但也要避免颜色过多，非突出的状态采用常规黑灰色即可。</span>
+                    </div>
+                </div>
+
                 <hr />
                 <div class="content" id="duolie">
                     <h1 class="sumaraytitle">多列表格</h1>
@@ -155,7 +169,39 @@ const WebBiaogePage = () => (
                             </ol>
                         </div>
                     </div>
+                    <div class="wrap">
+                        <div class="peitu">
+                            <div class="imgbg">
+                                <Chakanyuantu src={require('../../images/webcomponent/shujuzhanshi/biaoge8.png')} beizhu="多列表格1"></Chakanyuantu>
+                            </div>
+                        </div>
+                        <p>注意多列表格一般会有复杂的筛选项，若筛选项对应的列数据在多列表格中处于隐藏位置，则筛选后用户无法第一时间感知到筛选成功的反馈。</p>
+                        <p>设计时注意各列数据在默认状态下的优先级，尽量将涉及筛选的列数据被一眼看到。</p>
+                    </div>
                 </div>
+                <hr />
+                <div class="content" id="duolie">
+                    <h1 class="sumaraytitle">视觉样式</h1>
+                    <div class="wrap">
+                        <div class="peitu">
+                            <div class="imgbg">
+                                <Chakanyuantu src={require('../../images/webcomponent/shujuzhanshi/biaoge6.png')} beizhu="多列表格1"></Chakanyuantu>
+                            </div>
+                            <h1 class="imgcaption">若采用斑马纹的样式，注意不要用淡色的标签，以免产生视觉混淆。</h1>
+                        </div>
+                        <p>对于较小的数据集，移除分割线或斑马纹可以减少视觉干扰。<br></br>在分析很多数据的时候，用户可能会因此而很难锁定视线在表格中的位置。分割线则可以帮助到这点。<br></br>如果要浏览水平方向很多数据的表格，那么交替行背景色（又叫斑马线）可以帮助眼睛锁定数据。</p>
+                    </div>
+                    <div class="wrap">
+                        <div class="peitu">
+                            <div class="imgbg">
+                                <Chakanyuantu src={require('../../images/webcomponent/shujuzhanshi/biaoge7.png')} beizhu="多列表格1"></Chakanyuantu>
+                            </div>
+                            <h1 class="imgcaption">图中可以看到五种标签形式：icon、深色块，浅色块，描边、小圆点。</h1>
+                        </div>
+                        <p>在表格中适当地采用标签可以有效的突出重要信息，也使得视觉上不那么单调。</p>
+                    </div>
+                </div>
+                <hr />
             </div>
 
         </div>

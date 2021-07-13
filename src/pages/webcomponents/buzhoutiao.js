@@ -51,8 +51,25 @@ const WebBuzhoutiaoPage = () => (
                     </div>
                     <p>可以用在弹窗中，将复杂步骤拆分来缓解用户焦虑。</p>
                 </div>
-
+                <div class="wrap">
+                    <div class="peitu">
+                        <div class="imgbg">
+                            <Chakanyuantu src={require('../../images/webcomponent/daohang/buzhoutiao3.png')} beizhu="步骤条2"></Chakanyuantu>
+                        </div>
+                        <h1 class="imgcaption">引导用户直接登录。</h1>
+                    </div>
+                    <p>实际只有两步操作的话也可以用步骤条，第三步做成完成，同时提供引导按钮。</p>
+                </div>
+                <div class="wrap">
+                    <div class="peitu">
+                        <div class="imgbg">
+                            <Chakanyuantu src={require('../../images/webcomponent/daohang/buzhoutiao4.webp')} beizhu="步骤条2"></Chakanyuantu>
+                        </div>
+                    </div>
+                    <p>可以在旁边放一个对关键信息的总结，减轻焦虑。</p>
+                </div>
             </div>
+            <hr />
         </div>
     </div>
 )

@@ -71,8 +71,9 @@ const WebTabsPage = () => (
                     <h1 class="contentitle">胶囊型</h1>
                     <div class="peitu">
                         <div class="imgbg">
-                            <Chakanyuantu src={require('../../images/webcomponent/daohang/tab4.png')} beizhu="tab4"></Chakanyuantu>
+                            <Chakanyuantu src={require('../../images/webcomponent/daohang/tab4.webp')} beizhu="tab4"></Chakanyuantu>
                         </div>
+                        <h1 class="imgcaption">胶囊可以有多种样式。</h1>
                     </div>
                     <p>胶囊型在样式上和单选的配置项相同，一般用于局部模块的次级导航。</p>
                 </div>
@@ -81,7 +82,7 @@ const WebTabsPage = () => (
                     <h1 class="contentitle">标签型</h1>
                     <div class="peitu">
                         <div class="imgbg">
-                            <Chakanyuantu src={require('../../images/webcomponent/daohang/tab8.png')} beizhu="tab8"></Chakanyuantu>
+                            <Chakanyuantu src={require('../../images/webcomponent/daohang/tab8.webp')} beizhu="tab8"></Chakanyuantu>
                         </div>
                     </div>
                     <p>标签的典型应用就是网页的多开标签页。应用在Web端,有以下几个特点:</p>
@@ -107,6 +108,7 @@ const WebTabsPage = () => (
                         <h1 class="imgcaption">实际上线条型和文字型，样式非常相似，混用在一起时差异不够明显。应尽量避免，例如将一级导航改为卡片式。</h1>
                     </div>
                     <p>一般一级导航会用线条型和卡片型，二级采用文字型，最次级采用胶囊型。<br></br>实际使用时需要根据布局美观度来调整。</p>
+                    <p>一级采用卡片型，则支持最多三层信息级别，一级采用线条型的话只支持两层。当然实际使用可以玩出灵活的花样组合。（比如上方标签的配图）</p>
                 </div>
 
                 <div class="wrap">

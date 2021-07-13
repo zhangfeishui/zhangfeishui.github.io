@@ -11,6 +11,7 @@ import "./components/layout.css"
 import Wiki from "./wiki"
 import WebComponents from "./pages/webcomponents/webcomponents"
 import NestingExample from "./pages/wuhan"
+import Animate from "./pages/animate/animation"
 
 
 
@@ -18,10 +19,10 @@ const routes = [
   {
     path: "/",
     exact: true,
-    main: () => <h2>Home</h2>
+    main: () => <h2>主页啥都没</h2>
   },
   { path: "/workings", main: () => <NestingExample></NestingExample> },
-  { path: "/writings", main: () => <WebComponents /> },
+  { path: "/writings", main: () => <Animate /> },
   { path: "/wiki", main: () => <Wiki /> },
 ];
 
@@ -34,11 +35,11 @@ function App() {
         <div>
           <Link id="wiki" to="/wiki">IXD-wiki</Link>
           <Link id="workings" to="/workings">武汉肺炎疫情</Link>
-          <Link id="writtings" to="/writings">writtings</Link>
+          <Link id="writtings" to="/writings">动画</Link>
         </div>
 
       </div>
-      <div class="section">
+      <div className="section">
         <Switch>
           {routes.map((route, index) => (
             // Render more <Route>s with the same paths as

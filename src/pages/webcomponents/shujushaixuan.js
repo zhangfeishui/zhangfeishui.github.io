@@ -50,15 +50,26 @@ const WebShujushaixuanPage = () => (
                         </div>
                         <h1 class="imgcaption">整体搜索与即时搜索。</h1>
                     </div>
-                    <div class="peitu">
+                    <div class="peituduo">
                         <div class="imgbg">
                             <Chakanyuantu src={require('../../images/webcomponent/shujuzhanshi/shaixuan2.png')} beizhu="筛选2"></Chakanyuantu>
                         </div>
                         <h1 class="imgcaption">对于即时搜索，虽然Web端可以直接回车搜索，但icon也应支持点击搜索</h1>
                     </div>
+                    <div class="peitu">
+                        <div class="imgbg">
+                            <Chakanyuantu src={require('../../images/webcomponent/shujuzhanshi/shaixuan8.png')} beizhu="筛选2"></Chakanyuantu>
+                        </div>
+                        <h1 class="imgcaption">多个输入框时请整体搜索。</h1>
+                    </div>
                     <p>数据有明确的分组时，采用Select。无规律的零散数据，采用搜索。</p>
                     <p>筛选后得到搜索结果，有两种实现方式：整体搜索和即时搜索。<br></br>整体搜索在设置各个筛选条件后，必须要用户点击搜索按钮才会开始搜索。而即时搜索在用户选择每一项时，都会立即搜索更新结果。</p>
-                    <p><br></br><br></br><b>整体搜索还是即时搜索？</b><br></br><li>整体搜索的适用场景 ——用户需要综合各类筛选条件一起查询，且搜索的时间较久（数据量比较大时）。</li><li>即时搜索的适用场景 ——数据量较小搜索很快。或是用户会经常性的切换筛选项来浏览，这时即时搜索可以省掉一步操作，更连贯。</li></p>
+                    <p>
+                        <br></br><br></br><b>整体搜索还是即时搜索？</b><br></br>
+                        <li>整体搜索的适用场景 ——用户需要综合各类筛选条件一起查询，且搜索的时间较久（数据量比较大时）。</li>
+                        <li>即时搜索的适用场景 ——数据量较小搜索很快。或是用户会经常性的切换筛选项来浏览，这时即时搜索可以省掉一步操作，更连贯。</li>
+                        <li>若有多个输入框，建议点击查询按钮来整体搜索。若采用即时搜索，则前端难以分辨键盘的enter事件属于哪个输入框。</li>
+                    </p>
                     <div class="beizhu">
                         <ol>
                             <li id="lifirst">注：还有一种办法是把整体搜索和即时搜索结合。默认整体搜索，但是局部常用选项支持即时搜索。</li>
@@ -119,6 +130,7 @@ const WebShujushaixuanPage = () => (
                     </div>
                     <p>还有一种比较少见的做法是使用侧栏来承载高级筛选，其优点是可以塞下更多更复杂的筛选条件，同时不影响屏幕内表格的可视区域。</p>
                 </div>
+
             </div>
 
             <hr />
@@ -132,8 +144,15 @@ const WebShujushaixuanPage = () => (
                         <h1 class="imgcaption">表头除了可以选择，还可以排序。</h1>
                     </div>
                     <p>精简筛选区域一方面意味着视觉上的美观整洁，另一方面可以给表格更多可视区域。<br></br>为此，除了展开收起的高级筛选，还可以采用表头筛选的形式。</p>
+                    <p>elementui的表头筛选和排序组件只能筛选当前页，对于多页的大数据，无法使用表头筛选。</p>
+                    <div class="beizhu">
+                        <ol>
+                            <li id="lifirst">注：Ant Design的组件支持表头筛选所有数据。</li>
+                        </ol>
+                    </div>
                 </div>
             </div>
+            <hr />
         </div>
     </div>
 )

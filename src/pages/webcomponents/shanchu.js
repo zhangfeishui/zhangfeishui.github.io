@@ -97,7 +97,7 @@ const WebShanchuPage = () => (
                 <hr />
                 <div class="content" id="chexiao">
                     <h1 class="sumaraytitle">撤销</h1>
-                    <p>撤销其实是非常棒的解决策略，让用户自由地尝试，不用担心犯错。<br></br>目前经历的项目都是后台直接删除数据，还没有支持撤销的,以后有相关经验再更新。</p>
+                    <p>撤销其实是非常棒的解决策略，让用户自由地尝试，不用担心犯错，但实际运用却不是那么简单。<br></br><a href="http://www.woshipm.com/discuss/132615.html">这篇文章</a>很好地总结了应该采用”二次确认“还是”撤销“。另外知乎也有<a href="https://www.zhihu.com/question/24298437">很多的讨论。</a><br></br>目前经历的项目由于开发原因，都是采用二次确认，还没有支持撤销的。</p>
                 </div>
                 <hr />
             </div>

@@ -18,6 +18,8 @@ import WebXiugaiPage from "./xiugai";
 import WebShanchuPage from "./shanchu";
 import WebQinmiPage from "./qinmi";
 import WebDuiqiPage from "./duiqi";
+import WebDuibiPage from "./duibi";
+import WebXiangyingPage from "./xiangying";
 import WebChongfuPage from "./chongfu";
 import WebBiaogePage from "./biaoge";
 import WebKapianPage from "./kapian";
@@ -37,6 +39,10 @@ import WebPopPage from "./pop";
 import WebDialogPage from "./dialog";
 import WebJiaoyanPage from "./jiaoyan";
 import WebBuzhoutiaoPage from "./buzhoutiao";
+import WebChoutiPage from "./chouti";
+import WebButtonPage from "./button";
+import WebColorPage from "./color";
+import WebJianshuPage from "./jianshu";
 
 
 const activeStyles = {
@@ -53,6 +59,14 @@ function WebComponents() {
             <div className="leftnav">
                 <ul>
                     <li><NavLink to={`${url}/aboutweb`} activeStyle={activeStyles}>关于Web组件</NavLink></li>
+                    <li>
+                        <span>通用</span>
+                        <ul class="secondnav">
+                            <li><NavLink to={`${url}/button`} activeStyle={activeStyles}>按钮</NavLink></li>
+                            <li><NavLink to={`${url}/color`} activeStyle={activeStyles}>颜色</NavLink></li>
+                            <li><NavLink to={`${url}/jianshu`} activeStyle={activeStyles}>鼠标与键盘</NavLink></li>
+                        </ul>
+                    </li>
                     <li>
                         <span>数据编辑</span>
                         <ul class="secondnav">
@@ -73,6 +87,7 @@ function WebComponents() {
                                     <li><NavLink to={`${url}/duiqi`} activeStyle={activeStyles} >对齐</NavLink></li>
                                     <li><NavLink to={`${url}/chongfu`} activeStyle={activeStyles}>重复</NavLink></li>
                                     <li><NavLink to={`${url}/duibi`} activeStyle={activeStyles} >对比</NavLink></li>
+                                    <li><NavLink to={`${url}/xiangying`} activeStyle={activeStyles} >响应式布局</NavLink></li>
                                 </ul>
                             </li>
                             <li><NavLink to={`${url}/biaoge`} activeStyle={activeStyles} >表格</NavLink></li>
@@ -102,6 +117,7 @@ function WebComponents() {
                             <li><NavLink to={`${url}/notification`} activeStyle={activeStyles} >Notification通知框</NavLink></li>
                             <li><NavLink to={`${url}/pop`} activeStyle={activeStyles} >Pop气泡</NavLink></li>
                             <li><NavLink to={`${url}/dialog`} activeStyle={activeStyles} >Dialog模态弹窗</NavLink></li>
+                            <li><NavLink to={`${url}/chouti`} activeStyle={activeStyles} >Drawer抽屉</NavLink></li>
                             <li><NavLink to={`${url}/jiaoyan`} activeStyle={activeStyles} >状态与校验</NavLink></li>
                         </ul>
                     </li>
@@ -112,6 +128,9 @@ function WebComponents() {
                     <WebAboutPage />
                 </Route>
                 <Route path={`${path}/aboutweb`}><WebAboutPage /></Route>
+                <Route path={`${path}/button`}><WebButtonPage /></Route>
+                <Route path={`${path}/color`}><WebColorPage /></Route>
+                <Route path={`${path}/jianshu`}><WebJianshuPage /></Route>
                 <Route path={`${path}/shuru`}><WebShuRuPage /></Route>
                 <Route path={`${path}/xuanze`}><WebXuanzePage /></Route>
                 <Route path={`${path}/xinzeng`}><WebXinzengPage /></Route>
@@ -120,7 +139,8 @@ function WebComponents() {
                 <Route path={`${path}/qinmi`}><WebQinmiPage /></Route>
                 <Route path={`${path}/duiqi`}><WebDuiqiPage /></Route>
                 <Route path={`${path}/chongfu`}><WebChongfuPage /></Route>
-                <Route path={`${path}/duibi`}><WebDuiqiPage /></Route>
+                <Route path={`${path}/duibi`}><WebDuibiPage /></Route>
+                <Route path={`${path}/xiangying`}><WebXiangyingPage /></Route>
                 <Route path={`${path}/biaoge`}><WebBiaogePage /></Route>
                 <Route path={`${path}/kapian`}><WebKapianPage /></Route>
                 <Route path={`${path}/tongjishuzhi`}><WebTongjishuzhiPage /></Route>
@@ -138,6 +158,7 @@ function WebComponents() {
                 <Route path={`${path}/notification`}><WebNotificationPage /></Route>
                 <Route path={`${path}/pop`}><WebPopPage /></Route>
                 <Route path={`${path}/dialog`}><WebDialogPage /></Route>
+                <Route path={`${path}/chouti`}><WebChoutiPage /></Route>
                 <Route path={`${path}/jiaoyan`}><WebJiaoyanPage /></Route>
             </Switch>
             {/* <Route path={match.url + "/carnitas"} component={Carnitas} /> */}

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'antd/dist/antd.css';
+//import '../pages/jiaohusheji/node_modules/antd/dist/antd.css';
 import { Modal, Button } from 'antd';
 
 class Chakanyuantu extends React.Component {

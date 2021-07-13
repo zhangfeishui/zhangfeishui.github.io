@@ -21,6 +21,7 @@ import Xike from "./xike";
 import Aokamu from "./aokamu";
 import Geshita from "./geshita";
 import Feici from "./feici";
+import Buqueding from "./buqueding";
 
 
 
@@ -45,6 +46,7 @@ function JiaohuYuanze() {
                             <li><NavLink to={`${url}/kongxianyane`} activeStyle={activeStyles}>空闲厌恶</NavLink></li>
                             <li><NavLink to={`${url}/touming`} activeStyle={activeStyles}>透明化运行</NavLink></li>
                             <li><NavLink to={`${url}/mubiaotidu`} activeStyle={activeStyles}>目标梯度</NavLink></li>
+                            <li><NavLink to={`${url}/buqueding`} activeStyle={activeStyles}>不确定厌恶</NavLink></li>
                         </ul>
                     </li>
                     <li>
@@ -69,6 +71,7 @@ function JiaohuYuanze() {
                 <Route path={`${path}/kongxianyane`}><KongxianYane /></Route>
                 <Route path={`${path}/touming`}><ToumingYunxing /></Route>
                 <Route path={`${path}/mubiaotidu`}><Mubiaotidu /></Route>
+                <Route path={`${path}/buqueding`}><Buqueding /></Route>
                 <Route path={`${path}/niersen`}><Niersen /></Route>
                 <Route path={`${path}/duohedi`}><Duohedi /></Route>
                 <Route path={`${path}/xike`}><Xike /></Route>

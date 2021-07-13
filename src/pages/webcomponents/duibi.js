@@ -40,7 +40,7 @@ const WebDuibiPage = () => (
                     <h1 class="contentitle">体现层级关系</h1>
                     <div class="peitu">
                         <div class="imgbg">
-                            <Chakanyuantu src={require('../../webcomponent/images/buju/duibi1.png')} beizhu="层级"></Chakanyuantu>
+                            <Chakanyuantu src={require('../../images/webcomponent/buju/duibi1.png')} beizhu="层级"></Chakanyuantu>
                         </div>
                     </div>
                     <p>最典型的就是标题与内容。一般来说为了加强对比，不仅会采用更大的字号，还会加粗标题。</p>
@@ -50,7 +50,7 @@ const WebDuibiPage = () => (
                     <h1 class="contentitle">突出重要内容</h1>
                     <div class="peitu">
                         <div class="imgbg">
-                            <Chakanyuantu src={require('../../webcomponent/images/buju/duibi2.png')} beizhu="统计数字"></Chakanyuantu>
+                            <Chakanyuantu src={require('../../images/webcomponent/buju/duibi2.png')} beizhu="统计数字"></Chakanyuantu>
                         </div>
                     </div>
                     <p>一般是用来突出重要的数字，比如统计数值。</p>
@@ -60,14 +60,14 @@ const WebDuibiPage = () => (
                     <h1 class="contentitle">引导用户操作</h1>
                     <div class="peitu">
                         <div class="imgbg">
-                            <Chakanyuantu src={require('../../webcomponent/images/buju/duibi3.png')} beizhu="按钮"></Chakanyuantu>
+                            <Chakanyuantu src={require('../../images/webcomponent/buju/duibi3.png')} beizhu="按钮"></Chakanyuantu>
                         </div>
                         <h1 class="imgcaption">根据实际情况来决定是否要加强对比。</h1>
                     </div>
                     <p>对CTA按钮加强对比，来诱导用户点击。又或是弱化那些不希望用户点击的按钮。</p>
                 </div>
             </div>
-
+            <hr />
         </div>
     </div>
 )

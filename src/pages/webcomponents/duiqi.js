@@ -34,7 +34,7 @@ const WebDuiqiPage = () => (
             <hr />
             <div class="content" id="xinzengdan" id="youduiqi">
                 <h1 class="sumaraytitle">表单类对齐</h1>
-                <p>主要是考虑组件的标题标签与内容区域的对齐方式，一般有右对齐，左对齐，顶部对齐这几种。</p>
+                <p>主要是考虑组件的标题标签与内容区域的对齐方式，一般有右对齐，左对齐，顶部对齐这几种。<br></br>对齐是优化查看体验的一种手段，而不是目的。因此实际设计时要灵活运用。</p>
 
                 <div class="wrap">
                     <h1 class="contentitle">右对齐</h1>
@@ -88,11 +88,17 @@ const WebDuiqiPage = () => (
 
                 <div class="wrap" id="dingbuduiqi">
                     <h1 class="contentitle">顶部对齐</h1>
-                    <div class="peitu">
+                    <div class="peituduo">
                         <div class="imgbg">
                             <Chakanyuantu src={require('../../images/webcomponent/buju/duiqi5.png')} beizhu="顶部对齐"></Chakanyuantu>
                         </div>
                         <h1 class="imgcaption">顶部对齐可以在一行放入两个甚至更多的输入框。</h1>
+                    </div>
+                    <div class="peitu">
+                        <div class="imgbg">
+                            <Chakanyuantu src={require('../../images/webcomponent/buju/duiqi7.png')} beizhu="顶部对齐"></Chakanyuantu>
+                        </div>
+                        <h1 class="imgcaption">实际体验，顶部对齐的浏览和查找速度较慢。<br></br>PS.身份证一行由于文字过长调整了对齐模式，前端单独处理即可，实际阅读会更自然。</h1>
                     </div>
                     <p><b>什么时候采用顶部对齐？</b><br></br><li>在Web端，顶部对齐的浏览和填写效率是最低的，因此使用场景较少，仅当宽度有限，且需要控制表单高度时才考虑。</li></p>
                 </div>

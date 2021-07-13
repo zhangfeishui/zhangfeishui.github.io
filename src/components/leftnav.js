@@ -37,7 +37,7 @@ class Leftnav extends React.Component {
                                     <li><Link to="/webcomponent/qinmi" activeStyle={activeStyles} partiallyActive={true}>亲密</Link></li>
                                     <li><Link to="/webcomponent/duiqi" activeStyle={activeStyles} partiallyActive={true}>对齐</Link></li>
                                     <li><Link to="/webcomponent/chongfu" activeStyle={activeStyles} partiallyActive={true}>重复</Link></li>
-                                    <li><Link to="/webcomponent/duibi" activeStyle={activeStyles} partiallyActive={true}>对比</Link></li>
+                                    <li><Link to="/webcomponent/duibi" activeStyle={activeStyles} partiallyActive={true}>对比1</Link></li>
                                 </ul>
                             </li>
                             <li><Link to="/webcomponent/biaoge" activeStyle={activeStyles} partiallyActive={true}>表格</Link></li>
